@@ -133,16 +133,20 @@ header li {
   text-transform: none;
 }
 
+.uppercase-text {
+  text-transform: uppercase;
+}
+
 /*---------- MAIN-HEADER - Side Menu ----------*/
 
 /* The side navigation menu */
-#sideMenu {
+#sidenav {
   background-color: white;
   display: inline-block;
   position: fixed;
   height: 100vh;
-  width: 240px;
-  left: -240px;
+  width: 280px;
+  left: -280px;
   transition: transform 0.3s;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -165,14 +169,14 @@ header li {
   transition: background-color 0.4s, transform 0.4s;
 }
 
-#sideMenu,
+#sidenav,
 #cover {
   transition: transform 0.4s;
 }
 
-.sidenav-active #sideMenu,
+.sidenav-active #sidenav,
 .sidenav-active #cover {
-  transform: translateX(240px);
+  transform: translateX(280px);
 }
 
 .noscroll {
@@ -180,7 +184,7 @@ header li {
   overflow: hidden;
 }
 
-.sideMenu__header {
+.sidenav__header {
   display: flex;
   position: relative;
   top: 0;
@@ -192,20 +196,20 @@ header li {
   box-shadow: 0px 4px 4px #0000001a;
 }
 
-.sideMenu__header-login {
+.sidenav__header-login {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.sideMenu__item {
+.sidenav__item {
   width: 100%;
   border-top: 0.75px solid #422f6b33;
   overflow: hidden;
 }
 
-.sideMenu__icon {
-  margin-right: 8px;
+.sidenav__icon {
+  margin-right: 12px;
+  font-size: 12px;
 }
 
 /*---------- Side Menu - Accordion ----------*/
@@ -220,31 +224,45 @@ input[type="radio"] {
   display: flex;
   padding: 0 24px;
   align-items: center;
-  /* justify-content: space-between; */
+  height: 48px;
+  cursor: pointer;
+}
+
+.tab-label--link {
+  display: flex;
+  padding: 0 24px;
+  align-items: center;
   height: 48px;
   cursor: pointer;
 }
 
 .tab-label::after {
   content: "\276F";
-  width: 16px;
-  height: 16px;
   font-weight: normal;
   text-align: center;
   transition: all 0.4s;
   margin-left: auto;
 }
+
 .tab-content {
   max-height: 0;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .tab-content a {
-  display: block;
+  display: flex;
   padding: 8px 24px;
   width: 100%;
   border-top: 0.75px solid #422f6b1a;
-  background-color: #00000005;
+  background-color: #00000008;
+}
+
+.seeAll-link::after {
+  content: "\276D\276D";
+  font-weight: normal;
+  text-align: center;
+  transition: all 0.4s;
+  margin-left: auto;
 }
 
 input:checked + .tab-label {
@@ -325,11 +343,13 @@ input:checked ~ .tab-content {
 /* Dropdown content (hidden by default) */
 .dropdown__content {
   min-width: 240px;
-  display: none;
   position: absolute;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px #00000033;
   z-index: 1;
+  max-height: 0;
+  transition: none;
+  overflow: hidden;
 }
 
 /* Links inside the dropdown */
@@ -347,7 +367,8 @@ input:checked ~ .tab-content {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown__content {
-  display: block;
+  max-height: 1000px;
+  transition: max-height 0.8s;
 }
 
 /*---------- MEDIA QUERIES ----------*/

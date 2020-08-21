@@ -12,20 +12,17 @@
     <script src="https://kit.fontawesome.com/08e1929a44.js" crossorigin="anonymous"></script>
   </head>
   <body>
-
     <div id="cover"></div>
-
-    <nav id="sideMenu">
-      <div class="sideMenu__header">
-        <a class="sideMenu__header-login" href="#">
+    <nav id="sidenav">
+      <div class="sidenav__header">
+        <a class="sidenav__header-login" href="#">
           <i class="far fa-user-circle login__icon"></i>
           <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
         </a>
       </div>
-
-      <div class="sideMenu__item">
-        <input type="radio" id="rd1" name="rd">
-        <label class="tab-label" for="rd1"><i class="fas fa-heart sideMenu__icon"></i>Decoração</label>
+      <div class="sidenav__item">
+        <input type="radio" id="category1" name="categories">
+        <label class="tab-label" for="category1"><i class="fas fa-heart sidenav__icon"></i>Decoração</label>
         <div class="tab-content">
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ADP">Adesivo de Parede</a>
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|GER">Geral</a>
@@ -34,41 +31,76 @@
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRD">Parede</a>
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRT">Porta-Retrato</a>
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|RLG">Religioso</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|">Ver Tudo</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|" class="seeAll-link">Ver Tudo</a>
         </div>
       </div>
-
-      <div class="sideMenu__item">
-        <input type="radio" id="rd2" name="rd">
-        <label class="tab-label" for="rd2">Diversos</label>
+      <div class="sidenav__item">
+        <input type="radio" id="category2" name="categories">
+        <label class="tab-label" for="category2"><i class="fas fa-boxes sidenav__icon"></i>Diversos</label>
         <div class="tab-content">
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|CHV">Chaveiro</a>
           <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|ESP">Espelho</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|" class="seeAll-link">Ver Tudo</a>
         </div>
       </div>
-
+      <div class="sidenav__item">
+        <input type="radio" id="category3" name="categories">
+        <label class="tab-label" for="category3"><i class="fas fa-paperclip sidenav__icon"></i>Papelaria</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ADS">Adesivo</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|AGD">Agenda</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAL">Calculadora</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAN">Caneta</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CRT">Cartão</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|EMB">Embalagem</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ESC">Escritório</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|" class="seeAll-link">Ver Tudo</a>
+        </div>
+      </div>
+      <div class="sidenav__item">
+        <input type="radio" id="category4" name="categories">
+        <label class="tab-label" for="category4"><i class="fas fa-gift sidenav__icon"></i>Presentes</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|FEM">Feminino</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|MAS">Masculino</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|UNS">Unissex</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|" class="seeAll-link">Ver Tudo</a>
+        </div>
+      </div>
+      <div class="sidenav__item">
+        <input type="radio" id="category5" name="categories">
+        <label class="tab-label" for="category5"><i class="far fa-clock sidenav__icon"></i>Relógio</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|CRO">Cronômetro</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RME">Relógio de Mesa</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RPR">Relógio de Parede</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|" class="seeAll-link">Ver Tudo</a>
+        </div>
+      </div>
+      <div class="sidenav__item">
+        <input type="radio" id="category6" name="categories">
+        <label class="tab-label" for="category6"><i class="fas fa-mortar-pestle sidenav__icon"></i>Utilidades Domésticas</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|BAN">Banheiro</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|COZ">Cozinha</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|GER">Geral</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|ORG">Organizador</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|" class="seeAll-link">Ver Tudo</a>
+        </div>
+      </div>
+      <div class="sidenav__item">
+        <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRO|" class="tab-label--link"><i class="fas fa-tags sidenav__icon"></i>Promoção</a>
+      </div>
+      <div class="sidenav__item">
+        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1" class="tab-label--link uppercase-text"><strong>Quem Somos</strong></a>
+      </div>
+      <div class="sidenav__item">
+        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2" class="tab-label--link uppercase-text"><strong>Contato</strong></a>
+      </div>
+      <div class="sidenav__item">
+        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3" class="tab-label--link uppercase-text"><strong>Dúvidas Frequentes</strong></a>
+      </div>
     </nav>
-
-
-    <!-- <div class="tabs">
-      <div class="tab">
-        <input type="radio" id="rd1" name="rd">
-        <label class="tab-label" for="rd1">Item 1</label>
-        <div class="tab-content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" id="rd2" name="rd">
-        <label class="tab-label" for="rd2">Item 2</label>
-        <div class="tab-content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
     <header>
       <div class="topbar">
         <div class="container container--topbar">
