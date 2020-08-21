@@ -12,28 +12,85 @@
     <script src="https://kit.fontawesome.com/08e1929a44.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <div id="cover"></div>
+
+    <nav id="sideMenu">
+      <div class="sideMenu__header">
+        <a class="sideMenu__header-login" href="#">
+          <i class="far fa-user-circle login__icon"></i>
+          <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
+        </a>
+      </div>
+
+      <div class="sideMenu__item">
+        <input type="radio" id="rd1" name="rd">
+        <label class="tab-label" for="rd1">Decoração</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ADP">Adesivo de Parede</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|GER">Geral</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ILU">Iluminação</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|MES">Mesa</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRD">Parede</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRT">Porta-Retrato</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|RLG">Religioso</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|">Ver Tudo</a>
+        </div>
+      </div>
+
+      <div class="sideMenu__item">
+        <input type="radio" id="rd2" name="rd">
+        <label class="tab-label" for="rd2">Diversos</label>
+        <div class="tab-content">
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|CHV">Chaveiro</a>
+          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|ESP">Espelho</a>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <!-- <div class="tabs">
+      <div class="tab">
+        <input type="radio" id="rd1" name="rd">
+        <label class="tab-label" for="rd1">Item 1</label>
+        <div class="tab-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd2" name="rd">
+        <label class="tab-label" for="rd2">Item 2</label>
+        <div class="tab-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
     <header>
       <div class="topbar">
         <div class="container container--topbar">
-            <div class="topbar__item">
+            <a href="tel:+551133260101" class="topbar__item">
               <i class="fas fa-phone-alt topbar__icon"></i>
               <span>Compre pelo telefone: (11) 3326-0101</span>
-            </div>
+            </a>
               <div class="topbar__item">
                 <div class="vertical-line"></div>
               </div>
-            <div class="topbar__item">
+            <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="topbar__item">
               <i class="fab fa-whatsapp topbar__icon"></i>
               <span>Compre pelo Whatsapp</span>
-            </div>
+            </a>
         </div>
       </div>
       <div class="main-header">
         <div class="container container--main-header">
-          <div class="icon-box">
+          <div class="icon-box" id="menuButton">
             <i class="fas fa-bars"></i>
           </div>
-          <img src="public/images/logo-lojsnovi.png" class="header__logo" alt="lojsnovi-logo" ></img>
+          <a href="https://www.lojsnovi.com.br/"><img src="public/images/logo-lojsnovi.png" class="header__logo" alt="lojsnovi-logo" ></img></a>
             <ul class="main-header__options">
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1">Sobre</a></li>
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2">Contato</a></li>
@@ -137,5 +194,5 @@
       </div>
     </header>
   </body>
-  <script src="../scripts.js"></script>
+  <script src="scripts.js"></script>
 </html>
