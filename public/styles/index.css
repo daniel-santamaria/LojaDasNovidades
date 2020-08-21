@@ -204,6 +204,10 @@ header li {
   overflow: hidden;
 }
 
+.sideMenu__icon {
+  margin-right: 8px;
+}
+
 /*---------- Side Menu - Accordion ----------*/
 
 input[type="radio"] {
@@ -216,7 +220,7 @@ input[type="radio"] {
   display: flex;
   padding: 0 24px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 48px;
   cursor: pointer;
 }
@@ -228,6 +232,7 @@ input[type="radio"] {
   font-weight: normal;
   text-align: center;
   transition: all 0.4s;
+  margin-left: auto;
 }
 .tab-content {
   max-height: 0;
