@@ -393,13 +393,23 @@ input:checked ~ .tab-content {
 
 /*---------- PRODUCT CARD ----------*/
 
-.product-list__title {
-  display: block;
+.section-heading {
+  display: flex;
   width: 100%;
-  text-align: left;
+  align-items: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.product-list__title {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
-  margin: 0 0 24px 0;
+  margin: 0 16px;
+}
+
+.title-line {
+  width: 100%;
+  border-bottom: 0.75px solid #422f6b33;
 }
 
 .product-list {
