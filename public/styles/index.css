@@ -393,7 +393,7 @@ input:checked ~ .tab-content {
 .product-list {
   display: flex;
   width: 100%;
-  padding: 0 0 16px 0;
+  padding: 0 0 24px 0;
   justify-content: space-between;
   overflow-x: auto;
 }
@@ -408,6 +408,10 @@ input:checked ~ .tab-content {
   border: 1px solid #422f6b66;
   box-shadow: 0 0 2px 2px #0000001a;
   border-radius: 8px;
+}
+
+.product-card:last-child {
+  margin-right: 0;
 }
 
 .product-card__image {
