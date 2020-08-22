@@ -55,8 +55,12 @@ header li {
   height: 100%;
 }
 
-.section {
-  padding: 16px 0;
+.container--section {
+  margin: 16px auto 48px auto;
+}
+
+.container--banner {
+  padding: 0;
 }
 
 /*---------- TOPBAR ----------*/
@@ -375,6 +379,105 @@ input:checked ~ .tab-content {
   transition: max-height 0.8s;
 }
 
+/*---------- PRODUCT CARD ----------*/
+
+.product-list__title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.product-list {
+  display: flex;
+  width: 100%;
+  padding: 0 0 16px 0;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 8px;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #422f6b66;
+  box-shadow: 0 0 2px 2px #0000001a;
+  border-radius: 8px;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 182px;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+.product-card__code {
+  font-size: 14px;
+  color: #00000080;
+  margin: 2px 0;
+}
+
+.product-card__name {
+  font-size: 18px;
+  color: #000000BF;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.product-card__price {
+  font-size: 24px;
+  color: #422f6b;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.product-card__divider {
+  width: 100%;
+  border-bottom: 0.75px solid #422f6b1a;
+  margin: 4px 0 8px 0;
+}
+
+.product-card__add-form {
+  display: flex;
+  font-size: 14px;
+  width: 100%;
+  height: 32px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-card__add-form input {
+  height: 100%;
+  margin: 0 8px 0 0;
+}
+
+.product-card__add-button {
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  color: #fff;
+  background-color: #422f6b;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+ .add-icon {
+   margin-right: 8px;
+ }
+
+
 /*---------- MEDIA QUERIES ----------*/
 
 /* @media (min-width: 576px) {
@@ -402,8 +505,13 @@ input:checked ~ .tab-content {
     border-bottom: 0.75px solid #422f6b33;
   }
 
-  .section {
-    padding: 32px 0;
+  .container--section {
+    margin: 24px auto 64px auto;
+  }
+
+  .container--banner {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .topbar {
