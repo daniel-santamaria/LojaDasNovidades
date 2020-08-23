@@ -657,9 +657,9 @@ input:checked ~ .tab-content {
     font-size: 18px;
   }
 
-  .map-container {
-    height: 224px;
-  }
+  /* .map-container {
+    height: 180px;
+  } */
 
 }
 
