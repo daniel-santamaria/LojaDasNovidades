@@ -48,6 +48,10 @@ header li {
   padding-left: 15px;
 }
 
+.container--flex {
+  display: flex;
+}
+
 .container--topbar,
 .container--main-header,
 .container--sub-header {
@@ -72,6 +76,8 @@ header li {
 .container--banner {
   padding: 0;
 }
+
+
 
 /*---------- TOPBAR ----------*/
 
@@ -528,6 +534,64 @@ input:checked ~ .tab-content {
   color: #fff;
   background-color: #422f6b;
 }
+
+/*---------- Contact ----------*/
+
+.container--contact {
+  background-color: #422f6b;
+  color: #fff;
+  padding: 64px 0;
+}
+
+.container-box-50 {
+  width: 50%;
+}
+
+.contact-heading {
+  display: block;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+.contact-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+/*---------- SITE MAP ----------*/
+
+.container--sitemap {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  padding: 32px 0;
+  color: #000;
+}
+
+.container--sitemap-items {
+  justify-content: space-between;
+}
+
+.sitemap-logo {
+  height: 64px;
+}
+
+.sitemap-group a {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.sitemap-channels {
+  align-items: center;
+  font-size: 32px;
+}
+
+.sitemap-channels a:nth-child(2) {
+  margin: 0 20px; 
+}
+
 
 /*---------- MEDIA QUERIES ----------*/
 
