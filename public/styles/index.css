@@ -402,8 +402,12 @@ input:checked ~ .tab-content {
 }
 
 .product-list__title {
+  max-width: 240px;
+  width: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
+  text-align: center;
+  color: #422f6b;
   margin: 0 16px;
 }
 
@@ -415,7 +419,7 @@ input:checked ~ .tab-content {
 .product-list {
   display: flex;
   width: 100%;
-  padding: 0 0 24px 0;
+  padding: 0 0 12px 0;
   justify-content: space-between;
   overflow-x: auto;
 }
@@ -425,6 +429,7 @@ input:checked ~ .tab-content {
   flex-direction: column;
   align-items: center;
   min-width: 200px;
+  max-width: 200px;
   padding: 8px;
   margin-right: 20px;
   font-family: "Roboto", sans-serif;
@@ -440,7 +445,7 @@ input:checked ~ .tab-content {
 
 .product-card__image {
   width: 100%;
-  height: 182px;
+  height: 180px;
   top: 0;
   left: 0;
   background-size: contain;
@@ -449,35 +454,32 @@ input:checked ~ .tab-content {
   margin-bottom: 8px;
 }
 
-.product-card__code {
-  font-size: 14px;
-  color: #000000bf;
-  margin: 2px 0;
-}
-
-.product-card__name {
-  font-size: 18px;
-  color: #000000bf;
-  font-weight: bold;
+.product-card__divider {
+  width: 80%;
+  border-bottom: 0.75px solid #422f6b1a;
   margin: 4px 0;
 }
 
+.product-card__name {
+  font-size: 16px;
+  color: #000000bf;
+  text-align: center;
+  margin: 4px 0;
+  height: 40px;
+  overflow: hidden;
+}
+
 .product-card__price {
-  font-size: 24px;
+  font-size: 20px;
   color: #422f6b;
   font-weight: bold;
   margin: 4px 0;
 }
 
-.product-card__divider {
-  width: 100%;
-  border-bottom: 0.75px solid #422f6b1a;
-  margin: 4px 0 8px 0;
-}
-
 .product-card__add-form {
   display: flex;
   font-size: 14px;
+  margin-top: 8px;
   width: 100%;
   height: 32px;
   align-items: center;
@@ -503,6 +505,28 @@ input:checked ~ .tab-content {
 }
 .add-icon {
   margin-right: 8px;
+}
+
+.category-see-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.see-all-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #422f6b;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #422f6b;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.see-all-button:hover {
+  color: #fff;
+  background-color: #422f6b;
 }
 
 /*---------- MEDIA QUERIES ----------*/
