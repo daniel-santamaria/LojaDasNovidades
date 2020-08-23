@@ -70,14 +70,12 @@ header li {
 }
 
 .container--section {
-  margin: 0 auto 48px auto;
+  margin: 0 auto 32px auto;
 }
 
 .container--banner {
   padding: 0;
 }
-
-
 
 /*---------- TOPBAR ----------*/
 
@@ -403,7 +401,7 @@ input:checked ~ .tab-content {
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-transform: uppercase;
 }
 
@@ -411,7 +409,7 @@ input:checked ~ .tab-content {
   max-width: 240px;
   width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: #422f6b;
   margin: 0 16px;
@@ -434,10 +432,10 @@ input:checked ~ .tab-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 168px;
+  max-width: 168px;
   padding: 8px;
-  margin-right: 20px;
+  margin-right: 12px;
   font-family: "Roboto", sans-serif;
   border: 1px solid #422f6b66;
   box-shadow: 0 0 2px 2px #0000001a;
@@ -451,7 +449,7 @@ input:checked ~ .tab-content {
 
 .product-card__image {
   width: 100%;
-  height: 180px;
+  height: 120px;
   top: 0;
   left: 0;
   background-size: contain;
@@ -467,7 +465,7 @@ input:checked ~ .tab-content {
 }
 
 .product-card__name {
-  font-size: 16px;
+  font-size: 14px;
   color: #000000bf;
   text-align: center;
   margin: 4px 0;
@@ -476,7 +474,7 @@ input:checked ~ .tab-content {
 }
 
 .product-card__price {
-  font-size: 20px;
+  font-size: 18px;
   color: #422f6b;
   font-weight: bold;
   margin: 4px 0;
@@ -493,13 +491,15 @@ input:checked ~ .tab-content {
 }
 
 .product-card__add-form input {
+  max-width: 36px;
   height: 100%;
-  margin: 0 8px 0 0;
+  margin: 0 4px 0 0;
 }
 
 .product-card__add-button {
+  font-size: 14px;
   display: flex;
-  padding: 0 8px;
+  padding: 0 4px;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -509,8 +509,9 @@ input:checked ~ .tab-content {
   text-transform: uppercase;
   border-radius: 4px;
 }
+
 .add-icon {
-  margin-right: 8px;
+  margin-right: 2px;
 }
 
 .category-see-all {
@@ -520,8 +521,8 @@ input:checked ~ .tab-content {
 }
 
 .see-all-button {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
   color: #422f6b;
   padding: 8px 16px;
   background-color: #fff;
@@ -540,58 +541,81 @@ input:checked ~ .tab-content {
 .container--contact {
   background-color: #422f6b;
   color: #fff;
-  padding: 64px 0;
+  padding: 32px 0;
 }
 
-.container-box-50 {
-  width: 50%;
+.container--boxes {
+  flex-direction: column;
+}
+
+.container-box {
+  text-align: center;
+  width: 100%;
+}
+
+.container-box:nth-child(1) {
+  margin-bottom: 24px;
+}
+
+.contact-map {
+  min-height: 240px;
 }
 
 .contact-heading {
   display: block;
-  font-size: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .contact-content {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /*---------- SITE MAP ----------*/
 
 .container--sitemap {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #f6f6f6;
-  padding: 32px 0;
+  padding: 24px 0;
   color: #000;
 }
 
 .container--sitemap-items {
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .sitemap-logo {
-  height: 64px;
+  display: none;
+}
+
+.sitemap-group {
+  text-align: center;
+}
+
+.sitemap-group-info {
+  margin-bottom: 32px;
 }
 
 .sitemap-group a {
+  font-weight: bold;
   display: block;
   margin-bottom: 12px;
 }
 
 .sitemap-channels {
+  justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 40px;
+  margin: 20px 0 0 0;
 }
 
 .sitemap-channels a:nth-child(2) {
-  margin: 0 20px; 
+  margin: 0 20px;
 }
-
 
 /*---------- MEDIA QUERIES ----------*/
 
@@ -599,13 +623,42 @@ input:checked ~ .tab-content {
   .container {
     max-width: 540px;
   }
-}
+} */
 
 @media (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 720px;
+  } */
+
+  .container--contact {
+    padding: 64px 0;
   }
-} */
+
+  .container--boxes {
+    flex-direction: row;
+  }
+
+  .container-box {
+    text-align: left;
+    width: 50%;
+  }
+
+  .container-box:nth-child(1) {
+    margin-bottom: 0;
+    padding: 0 24px 0 0;
+  }
+
+  .contact-heading {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .contact-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+
+}
 
 @media (min-width: 992px) {
   /* .container {
@@ -659,6 +712,114 @@ input:checked ~ .tab-content {
   .search {
     max-width: 240px;
   }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .product-list__title {
+    font-size: 24px;
+  }
+
+  .product-card {
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 20px;
+  }
+
+  .product-card__image {
+    height: 120px;
+  }
+
+  .product-card__name {
+    font-size: 16px;
+  }
+
+  .product-card__price {
+    font-size: 20px;
+  }
+
+  /* .product-card__add-form {
+    display: flex;
+    font-size: 14px;
+    margin-top: 8px;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    justify-content: space-around;
+  } */
+
+  /* .product-card__add-form input {
+    height: 100%;
+    margin: 0 8px 0 0;
+  } */
+
+  /* .product-card__add-button {
+    display: flex;
+    padding: 0 8px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #422f6b;
+    text-transform: uppercase;
+    border-radius: 4px;
+  } */
+
+  /* .add-icon {
+    margin-right: 8px;
+  } */
+
+  .category-see-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .see-all-button {
+    font-size: 18px;
+  }
+
+  /*---------- Contact ----------*/
+
+  
+  /*---------- SITE MAP ----------*/
+
+  .container--sitemap {
+    font-size: 16px;
+    padding: 32px 0;
+  }
+
+  .container--sitemap-items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sitemap-logo {
+    display: block;
+    height: 64px;
+  }
+
+  .sitemap-group {
+    text-align: left;
+  }
+
+  .sitemap-group-info {
+    margin-bottom: 0;
+  }
+
+  .sitemap-group a {
+    font-weight: normal;
+  }
+
+  .sitemap-channels {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-size: 32px;
+  }
+
 }
 
 @media (min-width: 1200px) {
