@@ -534,46 +534,76 @@ input:checked ~ .tab-content {
 
 /*---------- Contact ----------*/
 
-.container--contact {
-  background-color: #422f6b;
+.container--contact-background {
+  background: url('../images/banner-02.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
-  padding: 32px 0;
 }
 
-.container--boxes {
-  flex-direction: column;
-}
-
-.container-box {
-  text-align: center;
+.color-layer {
+  background: linear-gradient(90deg, rgba(66, 47, 107, 0.8) 0%, rgba(68, 140, 170, 0.75) 100%);
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
 }
 
-.container-box:nth-child(1) {
-  margin-bottom: 48px;
+.container--contact {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-heading {
-  display: block;
-  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.title-line--contact {
+  width: 100%;
+  border-bottom: 0.75px solid #fff;
+}
+
+.contact-title {
+  font-size: 48px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 12px;
+  width: 100%;
 }
 
 .contact-content {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  width: 75%;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
-.contact-content:nth-child(2) {
-  margin-bottom: 16px;
+.contact-content-heading {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.contact-icon {
-  margin-right: 16px;
+.contact-content:nth-child(3),
+.contact-content:nth-child(4) {
+  font-size: 20px;
 }
 
+.map-container {
+  margin-top: 16px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
 
 /*---------- SITE MAP ----------*/
 
@@ -630,37 +660,6 @@ input:checked ~ .tab-content {
   /* .container {
     max-width: 720px;
   } */
-
-  .container--contact {
-    padding: 64px 0;
-  }
-
-  .container--boxes {
-    flex-direction: row;
-  }
-
-  .container-box {
-    width: 50%;
-  }
-
-  .container-box:nth-child(1) {
-    margin-bottom: 0;
-    padding: 0 24px 0 0;
-  }
-
-  .contact-heading {
-    font-size: 40px;
-    margin-bottom: 32px;
-  }
-
-  .contact-content {
-    font-size: 18px;
-  }
-
-  /* .map-container {
-    height: 180px;
-  } */
-
 }
 
 @media (min-width: 992px) {
