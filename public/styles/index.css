@@ -428,7 +428,7 @@ input:checked ~ .tab-content {
 
 .mini-banner-item-info {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -611,7 +611,7 @@ input:checked ~ .tab-content {
 }
 
 .contact-title {
-  font-size: 48px;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   text-align: center;
@@ -622,7 +622,7 @@ input:checked ~ .tab-content {
 
 .contact-content {
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   width: 66%;
   text-align: center;
   margin-bottom: 32px;
@@ -635,7 +635,7 @@ input:checked ~ .tab-content {
 
 .contact-content:nth-child(3),
 .contact-content:nth-child(4) {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .map-link {
@@ -660,10 +660,10 @@ input:checked ~ .tab-content {
 
 /* ---------- OTHER CONTACT ----------*/
 
-.container--other-contact-background {
+/* .container--other-contact-background {
   background-color: #3b3b3b;
   width: 100%;
-}
+} */
 
 .container--other-contact {
   padding: 64px 0;
@@ -710,17 +710,7 @@ input:checked ~ .tab-content {
   margin-bottom: 16px;
 }
 
-.channel-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  margin: 0 16px 0 0;
-}
 
-.channel-info {
-  font-size: 16px;
-}
 
 .vertical-line-contact {
   display: flex;
@@ -742,7 +732,7 @@ input:checked ~ .tab-content {
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   padding: 32px 0 0 0;
 }
 
@@ -783,13 +773,21 @@ input:checked ~ .tab-content {
   text-align: center;
 }
 
-.sitemap-channels a:nth-child(2) {
-  margin: 0 20px;
-}
-
 .container--sitemap-items {
   flex-direction: row;
   justify-content: space-between;
+}
+
+.channel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 12px 0 0;
+}
+
+.channel-info {
+  font-size: 14px;
 }
 
 /*---------- MEDIA QUERIES ----------*/
