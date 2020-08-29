@@ -107,14 +107,24 @@
         <div class="container container--topbar">
             <a href="tel:+551133260101" class="topbar__item">
               <i class="fas fa-phone-alt topbar__icon"></i>
-              <span>Compre pelo telefone: (11) 3326-0101</span>
-            </a>
-              <div class="topbar__item">
-                <div class="vertical-line"></div>
+              <span class="topbar__info">Compre pelo telefone: (11) 3326-0101</span>
+              <div class="topbar__info-pop">
+                <div class="info-pop__content">
+                  <div class="pop__content-title">
+                    Horário de Funcionamento
+                  </div>
+                  <div class="pop__content-text">
+                    Segunda a Sábado,<br>das 10:00 às 16:00
+                  </div>
+                </div>
               </div>
+            </a>
+            <div class="topbar__item">
+              <div class="vertical-line"></div>
+            </div>
             <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="topbar__item">
-              <i class="fab fa-whatsapp topbar__icon"></i>
-              <span>Compre pelo Whatsapp</span>
+              <div class="custom-icon custom-icon--whatsapp"></div>
+              <span class="topbar__info">Compre pelo Whatsapp</span>
             </a>
         </div>
       </div>
@@ -125,7 +135,7 @@
           </div>
           <a href="https://www.lojsnovi.com.br/"><img src="public/images/logo-lojsnovi.png" class="header__logo" alt="lojsnovi-logo"></a>
             <ul class="main-header__options">
-                <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1">Sobre</a></li>
+                <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1">Quem Somos</a></li>
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2">Contato</a></li>
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3">Dúvidas</a></li>
                 <li>
@@ -516,63 +526,8 @@
           </div>
         </div>
       </div>
-      
-      <!-- <div class="container--other-contact-background">
-        <div class="container">
-          <div class="container--other-contact">
-            <div class="box">
-              <div class="other-contact-heading">
-                <div class="title-line--other-contact"></div>
-                <span class="other-contact-title">Entre em contato</span>
-                <div class="title-line--other-contact"></div>
-              </div>
-              <div class="other-contact-channels">
-                <a href="mailto:contato@lojsnovi.com.br" class="other-contact-channel">
-                  <div class="channel-icon">
-                    <i class="far fa-envelope contact-icon"></i>
-                  </div>
-                  <div class="channel-info">
-                    contato@lojsnovi.com.br
-                  </div>
-                </a>
-                <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="other-contact-channel">
-                  <div class="channel-icon">
-                    <i class="fab fa-whatsapp contact-icon"></i>
-                  </div>
-                  <div class="channel-info">
-                    (11) 96360-0188
-                  </div>
-                </a>
-                <a href="tel:+551133260101" class="other-contact-channel">
-                  <div class="channel-icon">
-                    <i class="fas fa-phone-alt contact-icon"></i>
-                  </div>
-                  <div class="channel-info">
-                    (11) 3326-0101
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="vertical-line-contact"></div>
-            <div class="box">
-              <div class="other-contact-heading">
-                <div class="title-line--other-contact"></div>
-                <span class="other-contact-title">Acompanhe as novidades!</span>
-                <div class="title-line--other-contact"></div>
-              </div>
-              <div class="instagram-container">
-                Em breve!
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div> -->
-
       <div class="container--sitemap">
         <div class="container container--sitemap-items container--flex">
-          <!-- <div class="sitemap-group">
-            <img src="public/images/logo-lojsnovi.png" class="sitemap-logo" alt="lojsnovi-logo">
-          </div> -->
           <div class="sitemap-group">
             <a href="mailto:contato@lojsnovi.com.br" class="other-contact-channel">
               <div class="channel-icon">
@@ -584,7 +539,7 @@
             </a>
             <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="other-contact-channel">
               <div class="channel-icon">
-                <i class="fab fa-whatsapp contact-icon"></i>
+                <div class="custom-icon custom-icon--whatsapp"></div>
               </div>
               <div class="channel-info">
                 (11) 96360-0188
@@ -600,25 +555,31 @@
             </a>
           </div>
           <div class="sitemap-group">
+            <div class="sitemap-group-title">
+              <span class="sitemap-group-title">Institucional</span>
+            </div>
             <ul>
-              <li>Institucional</li>
               <li><a href="#">Quem Somos</a></li>
               <li><a href="#">Dúvidas Frequentes</a></li>
             </ul>
           </div>
           <div class="sitemap-group">
+            <div class="sitemap-group-title">
+              <span class="sitemap-group-title">Conta e Cadastro</span>
+            </div>
             <ul>
-              <li>Conta e Cadastro</li>
               <li><a href="#">Cadastre-se</a></li>
               <li><a href="#">Acessar minha conta</a></li>
               <li><a href="#">Esqueci a senha</a></li>
             </ul>
           </div>
           <div class="sitemap-group">
-            <span>Acompanhe a Lojsnovi!</span>
+            <div class="sitemap-group-title">
+              <span class="sitemap-group-title">Acompanhe a Lojsnovi!</span>
+            </div>
             <a href="" class="other-contact-channel">
               <div class="channel-icon">
-                <i class="fab fa-instagram contact-icon"></i>
+                <div class="custom-icon custom-icon--instagram"></div>
               </div>
               <div class="channel-info">
                 @lojsnovi
@@ -626,7 +587,7 @@
             </a>
             <a href="" class="other-contact-channel">
               <div class="channel-icon">
-                <i class="fab fa-facebook-square contact-icon"></i>
+                <div class="custom-icon custom-icon--facebook"></div>
               </div>
               <div class="channel-info">
                 /Lojsnovi
@@ -636,7 +597,7 @@
         </div>
         <div class="sitemap-group sitemap-group-info">
           <strong>Lojsnovi - Loja das Novidades Ltda. </strong> 
-          CNPJ: 49.671.589/0001-49 | Rua Florêncio de Abreu, 164 - Centro -São Paulo/SP - CEP 01030-000
+          — CNPJ: 49.671.589/0001-49 | Rua Florêncio de Abreu, 164 - Centro -São Paulo/SP - CEP 01030-000
         </div>
       </div>
     </main>
