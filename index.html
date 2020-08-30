@@ -20,6 +20,22 @@
           <i class="fas fa-sign-in-alt login__icon"></i>
           <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
         </a>
+        <!-- <div class="main-header__signed-user">
+          <div>
+            <span class="normal-text">Bem vindo!</span>
+            <div class="user-logout">Sair</div>
+          </div>
+          <div>
+            <div class="signed-user__vertical-line"></div>
+          </div>
+          <div class="signed-user__cart">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <div class="cart-counter">99</div>
+            <div>
+              R$ 350,00
+            </div>
+          </div>
+        </div> -->
       </div>
       <div class="sidenav__item">
         <input type="checkbox" id="category1" name="categories">
@@ -138,13 +154,13 @@
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1">Quem Somos</a></li>
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2">Contato</a></li>
                 <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3">Dúvidas</a></li>
-                <!-- <li>
+                <li>
                   <a class="main-header__login" href="#">
                       <i class="fas fa-sign-in-alt login__icon"></i>
                       <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
                   </a>
-                </li> -->
-                <li>
+                </li>
+                <!-- <li>
                   <div class="main-header__signed-user">
                     <div>
                       <span class="normal-text">Bem vindo!</span>
@@ -161,7 +177,7 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
             </ul>
             <div class="icon-box">
               <i class="fas fa-shopping-cart"></i>
@@ -312,7 +328,7 @@
           </div>
         </div>
       </div>
-      <div class="mini-banners">
+      <div class="mini-banners mini-banners--top">
         <div class="container container--mini-banners">
           <div class="mini-banner-item">
             <div class="mini-banner-item-icon">
@@ -322,6 +338,7 @@
               Produtos <b>Nacionais</b> e <b>Importados</b>
             </div>
           </div>
+          <div class="horizontal-divider"></div>
           <div class="vertical-divider"></div>
           <div class="mini-banner-item">
             <div class="mini-banner-item-icon">
@@ -331,6 +348,7 @@
               Vendas por <b>atacado</b> para todo o Brasil
             </div>
           </div>
+          <div class="horizontal-divider"></div>
           <div class="vertical-divider"></div>
           <div class="mini-banner-item">
             <div class="mini-banner-item-icon">
@@ -340,6 +358,7 @@
               <b>Qualidade</b> e <b>Preços Competitivos</b>
             </div>
           </div>
+          <div class="horizontal-divider"></div>
           <div class="vertical-divider"></div>
           <div class="mini-banner-item">
             <div class="mini-banner-item-icon">
@@ -505,22 +524,62 @@
           <a href="#" class="see-all-button">Ver todos</a>
         </div>
       </div>
-
-
-      <div class="container--contact-background">
-        <div class="color-layer">
-          <div class="container container--contact">
-            <div class="contact-heading">
-              <div class="title-line--contact"></div>
-              <span class="contact-title">Venha visitar nossa loja!</span>
-              <div class="title-line--contact"></div>
+      <div class="mini-banners mini-banners--bottom">
+        <div class="container container--mini-banners">
+          <div class="mini-banner-item">
+            <div class="mini-banner-item-icon">
+              <i class="fas fa-globe-americas"></i>
             </div>
-            <div class="contact-content">
+            <div class="mini-banner-item-info">
+              Produtos <b>Nacionais</b> e <b>Importados</b>
+            </div>
+          </div>
+          <div class="horizontal-divider"></div>
+          <div class="vertical-divider"></div>
+          <div class="mini-banner-item">
+            <div class="mini-banner-item-icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <div class="mini-banner-item-info">
+              Vendas por <b>atacado</b> para todo o Brasil
+            </div>
+          </div>
+          <div class="horizontal-divider"></div>
+          <div class="vertical-divider"></div>
+          <div class="mini-banner-item">
+            <div class="mini-banner-item-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="mini-banner-item-info">
+              <b>Qualidade</b> e <b>Preços Competitivos</b>
+            </div>
+          </div>
+          <div class="horizontal-divider"></div>
+          <div class="vertical-divider"></div>
+          <div class="mini-banner-item">
+            <div class="mini-banner-item-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div class="mini-banner-item-info">
+              <b>Atendimento Personalizado</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="visit-background">
+        <div class="color-layer">
+          <div class="container container--visit">
+            <div class="visit-heading">
+              <div class="title-line--visit"></div>
+              <span class="visit-title">Venha visitar nossa loja!</span>
+              <div class="title-line--visit"></div>
+            </div>
+            <div class="visit__content-box">
               Com quase 40 anos de experiência, contamos com uma variedade completa e exclusiva de produtos para seu negócio!<br>
               Será um prazer receber você.
             </div>
-            <div class="contact-content">
-              <div class="contact-content-heading">
+            <div class="visit__content-box">
+              <div class="visit__content-box-heading">
                 Nosso endereço
               </div>
               <div>
@@ -528,8 +587,8 @@
                 Centro - São Paulo/SP<br>
               </div>
             </div>
-            <div class="contact-content">
-              <div class="contact-content-heading">
+            <div class="visit__content-box">
+              <div class="visit__content-box-heading">
                 Horário de Funcionamento
               </div>
               <div>
@@ -539,53 +598,37 @@
               <a href="https://g.page/lojsnovi?share">
                 <div class="map-link">
                   <div class="custom-icon custom-icon--google-maps"></div>
-                  <span class="map-link__button-text">Como chegar</span>
+                  <span class="map-link__text">Como chegar</span>
                 </div>
               </a>
           </div>
         </div>
       </div>
-      <div class="container--sitemap">
-        <div class="container container--sitemap-items container--flex">
+      <div class="sitemap">
+        <div class="container container--sitemap">
           <div class="sitemap-group">
-            <a href="mailto:contato@lojsnovi.com.br" class="other-contact-channel">
-              <div class="channel-icon">
-                <i class="far fa-envelope contact-icon"></i>
-              </div>
-              <div class="channel-info">
-                contato@lojsnovi.com.br
-              </div>
+            <a href="mailto:contato@lojsnovi.com.br" class="contact-channel">
+              <i class="far fa-envelope contact-channel__icon"></i>
+              <div>contato@lojsnovi.com.br</div>
             </a>
-            <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="other-contact-channel">
-              <div class="channel-icon">
-                <div class="custom-icon custom-icon--whatsapp"></div>
-              </div>
-              <div class="channel-info">
-                (11) 96360-0188
-              </div>
+            <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="contact-channel">
+              <div class="custom-icon custom-icon--whatsapp contact-channel__icon"></div>
+              <div>(11) 96360-0188</div>
             </a>
-            <a href="tel:+551133260101" class="other-contact-channel">
-              <div class="channel-icon">
-                <i class="fas fa-phone-alt contact-icon"></i>
-              </div>
-              <div class="channel-info">
-                (11) 3326-0101
-              </div>
+            <a href="tel:+551133260101" class="contact-channel">
+              <i class="fas fa-phone-alt contact-channel__icon"></i>
+              <div>(11) 3326-0101</div>
             </a>
           </div>
           <div class="sitemap-group">
-            <div class="sitemap-group-title">
-              <span class="sitemap-group-title">Institucional</span>
-            </div>
+            <div class="sitemap-group__title">Institucional</div>
             <ul>
               <li><a href="#">Quem Somos</a></li>
               <li><a href="#">Dúvidas Frequentes</a></li>
             </ul>
           </div>
           <div class="sitemap-group">
-            <div class="sitemap-group-title">
-              <span class="sitemap-group-title">Conta e Cadastro</span>
-            </div>
+            <div class="sitemap-group__title">Conta e Cadastro</div>
             <ul>
               <li><a href="#">Cadastre-se</a></li>
               <li><a href="#">Acessar minha conta</a></li>
@@ -593,30 +636,20 @@
             </ul>
           </div>
           <div class="sitemap-group">
-            <div class="sitemap-group-title">
-              <span class="sitemap-group-title">Acompanhe a Lojsnovi!</span>
-            </div>
-            <a href="" class="other-contact-channel">
-              <div class="channel-icon">
-                <div class="custom-icon custom-icon--instagram"></div>
-              </div>
-              <div class="channel-info">
-                @lojsnovi
-              </div>
+            <div class="sitemap-group__title">Acompanhe a Lojsnovi!</div>
+            <a href="" class="contact-channel">
+              <div class="custom-icon custom-icon--instagram contact-channel__icon"></div>
+              <div>@lojsnovi</div>
             </a>
-            <a href="" class="other-contact-channel">
-              <div class="channel-icon">
-                <div class="custom-icon custom-icon--facebook"></div>
-              </div>
-              <div class="channel-info">
-                /Lojsnovi
-              </div>
+            <a href="" class="contact-channel">
+              <div class="custom-icon custom-icon--facebook contact-channel__icon"></div>
+              <div>/Lojsnovi</div>
             </a>
           </div>
         </div>
-        <div class="sitemap-group sitemap-group-info">
-          <strong>Lojsnovi - Loja das Novidades Ltda. </strong> 
-          — CNPJ: 49.671.589/0001-49 | Rua Florêncio de Abreu, 164 - Centro -São Paulo/SP - CEP 01030-000
+        <div class="sitemap-group sitemap-group--brand-info">
+          <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
+          <span class="text-separator"> — </span><span>CNPJ: 49.671.589/0001-49</span><span class="text-separator"> | </span>Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP 01030-000</span>
         </div>
       </div>
     </main>
