@@ -658,6 +658,7 @@ input:checked ~ .tab-content {
   padding: 4px;
   margin: 0 4px 0 0;
   font-size: 16px;
+  min-width: 0;
 }
 
 .product-card__add-button {
