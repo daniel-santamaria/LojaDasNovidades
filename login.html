@@ -2,309 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lojsnovi - Loja das Novidades</title>
-    <meta name="description" content="A melhor opção de compras em atacado! Presentes, decoração e uma seleção exclusiva de produtos nacionais e importados. Atendimento personalizado e envios para todo o Brasil!">
-    <meta name="keywords" content="atacado, presentes, decoração, importados">
-    <link rel="stylesheet" href="public/styles/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/08e1929a44.js" crossorigin="anonymous"></script>
+    <meta
+      name="description"
+      content="A melhor opção de compras em atacado! Presentes, decoração e uma seleção exclusiva de produtos nacionais e importados. Atendimento personalizado e envios para todo o Brasil!"
+    />
+    <meta name="keywords" content="atacado, presentes, decoração, importados" />
+    <link rel="stylesheet" href="public/styles/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/08e1929a44.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="cover"></div>
-    <nav id="sidenav">
-      <div class="sidenav__header">
-        <a class="sidenav__header-login" href="login.html">
-          <i class="fas fa-sign-in-alt login__icon"></i>
-          <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
-        </a>
-        <!-- <div class="main-header__signed-user">
-          <div>
-            <span class="normal-text">Bem vindo!</span>
-            <div class="user-logout">Sair</div>
-          </div>
-          <div>
-            <div class="signed-user__vertical-line"></div>
-          </div>
-          <div class="signed-user__cart">
-            <i class="fas fa-shopping-cart cart-icon"></i>
-            <div class="cart-counter">99</div>
-            <div>
-              R$ 350,00
-            </div>
-          </div>
-        </div> -->
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category1" name="categories">
-        <label class="tab-label" for="category1"><i class="fas fa-heart sidenav__icon"></i>Decoração</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ADP">Adesivo de Parede</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|GER">Geral</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ILU">Iluminação</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|MES">Mesa</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRD">Parede</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRT">Porta-Retrato</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|RLG">Religioso</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category2" name="categories">
-        <label class="tab-label" for="category2"><i class="fas fa-boxes sidenav__icon"></i>Diversos</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|CHV">Chaveiro</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|ESP">Espelho</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category3" name="categories">
-        <label class="tab-label" for="category3"><i class="fas fa-paperclip sidenav__icon"></i>Papelaria</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ADS">Adesivo</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|AGD">Agenda</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAL">Calculadora</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAN">Caneta</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CRT">Cartão</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|EMB">Embalagem</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ESC">Escritório</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category4" name="categories">
-        <label class="tab-label" for="category4"><i class="fas fa-gift sidenav__icon"></i>Presentes</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|FEM">Feminino</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|MAS">Masculino</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|UNS">Unissex</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category5" name="categories">
-        <label class="tab-label" for="category5"><i class="far fa-clock sidenav__icon"></i>Relógio</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|CRO">Cronômetro</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RME">Relógio de Mesa</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RPR">Relógio de Parede</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <input type="checkbox" id="category6" name="categories">
-        <label class="tab-label" for="category6"><i class="fas fa-mortar-pestle sidenav__icon"></i>Utilidades Domésticas</label>
-        <div class="tab-content">
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|BAN">Banheiro</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|COZ">Cozinha</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|GER">Geral</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|ORG">Organizador</a>
-          <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|" class="seeAll-link">Ver Tudo</a>
-        </div>
-      </div>
-      <div class="sidenav__item">
-        <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRO|" class="tab-label--link"><i class="fas fa-tags sidenav__icon"></i>Promoção</a>
-      </div>
-      <div class="sidenav__item">
-        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1" class="tab-label--link uppercase-text"><strong>Quem Somos</strong></a>
-      </div>
-      <div class="sidenav__item">
-        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2" class="tab-label--link uppercase-text"><strong>Contato</strong></a>
-      </div>
-      <div class="sidenav__item">
-        <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3" class="tab-label--link uppercase-text"><strong>Dúvidas Frequentes</strong></a>
-      </div>
-    </nav>
     <header>
       <div class="topbar">
         <div class="container container--topbar">
-            <a href="tel:+551133260101" class="topbar__item">
-              <i class="fas fa-phone-alt topbar__icon"></i>
-              <span class="topbar__info">Compre pelo telefone: (11) 3326-0101</span>
-              <div class="topbar__info-pop">
-                <div class="info-pop__content">
-                  <div class="info-pop__content-title">
-                    Horário de Funcionamento
-                  </div>
-                  <div class="pop__content-text">
-                    Segunda a Sábado,<br>das 10:00 às 16:00
-                  </div>
+          <a href="tel:+551133260101" class="topbar__item">
+            <i class="fas fa-phone-alt topbar__icon"></i>
+            <span class="topbar__info"
+              >Compre pelo telefone: (11) 3326-0101</span
+            >
+            <div class="topbar__info-pop">
+              <div class="info-pop__content">
+                <div class="info-pop__content-title">
+                  Horário de Funcionamento
+                </div>
+                <div class="pop__content-text">
+                  Segunda a Sábado,<br />das 10:00 às 16:00
                 </div>
               </div>
-            </a>
-            <div class="topbar__item">
-              <div class="vertical-line"></div>
             </div>
-            <a href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp" class="topbar__item">
-              <div class="custom-icon custom-icon--whatsapp"></div>
-              <span class="topbar__info">Compre pelo Whatsapp</span>
-            </a>
+          </a>
+          <div class="topbar__item">
+            <div class="vertical-line"></div>
+          </div>
+          <a
+            href="https://wa.me/5511963600188?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+minha+compra+na+Lojsnovi+por+Whatsapp"
+            class="topbar__item"
+          >
+            <div class="custom-icon custom-icon--whatsapp"></div>
+            <span class="topbar__info">Compre pelo Whatsapp</span>
+          </a>
         </div>
       </div>
       <div class="main-header">
         <div class="container container--main-header">
-          <div class="icon-box" id="menuButton">
-            <i class="fas fa-bars"></i>
-          </div>
-          <a href="https://www.lojsnovi.com.br/"><img src="public/images/logo-lojsnovi.png" class="header__logo" alt="lojsnovi-logo"></a>
-            <ul class="main-header__options">
-                <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1">Quem Somos</a></li>
-                <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2">Contato</a></li>
-                <li><a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3">Dúvidas</a></li>
-                <li>
-                  <a class="main-header__login" href="login.html">
-                      <i class="fas fa-sign-in-alt login__icon"></i>
-                      <span>Entre <span class="normal-text">ou</span><br>Cadastre-se</span>
-                  </a>
-                </li>
-                <!-- <li>
-                  <div class="main-header__signed-user">
-                    <div>
-                      <span class="normal-text">Bem vindo!</span>
-                      <div class="user-logout">Sair</div>
-                    </div>
-                    <div>
-                      <div class="signed-user__vertical-line"></div>
-                    </div>
-                    <div class="signed-user__cart">
-                      <i class="fas fa-shopping-cart cart-icon"></i>
-                      <div class="cart-counter">99</div>
-                      <div>
-                        R$ 350,00
-                      </div>
-                    </div>
-                  </div>
-                </li> -->
-            </ul>
-            <div class="icon-box">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-        </div>
-      </div>
-      <div class="sub-header">
-        <div class="container container--sub-header">
-          <ul class="sub-header__categories">
+          <a href="https://www.lojsnovi.com.br/" class="icon-box">
+            <i class="fas fa-home"></i>
+          </a>
+          <a href="https://www.lojsnovi.com.br/"
+            ><img
+              src="public/images/logo-lojsnovi.png"
+              class="header__logo"
+              alt="lojsnovi-logo"
+          /></a>
+          <ul class="main-header__options">
             <li>
-              <div class="dropdown">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|" class="dropdowwn__toggle">Decoração</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ADP">Adesivo de Parede</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|GER">Geral</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|ILU">Iluminação</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|MES">Mesa</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRD">Parede</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|PRT">Porta-Retrato</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DEC|RLG">Religioso</a>
-                </div>
-              </div>
+              <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=1"
+                >Quem Somos</a
+              >
             </li>
             <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|" class="dropdowwn__toggle">Diversos</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|CHV">Chaveiro</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=DIV|ESP">Espelho</a>
-                </div>
-              </div>
+              <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2"
+                >Contato</a
+              >
             </li>
             <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|" class="dropdowwn__toggle">Papelaria</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ADS">Adesivo</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|AGD">Agenda</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAL">Calculadora</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CAN">Caneta</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|CRT">Cartão</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|EMB">Embalagem</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PAP|ESC">Escritório</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|" class="dropdowwn__toggle">Presentes</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|FEM">Feminino</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|MAS">Masculino</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRE|UNS">Unissex</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|" class="dropdowwn__toggle">Relógio</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|CRO">Cronômetro</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RME">Relógio de Mesa</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=REL|RPR">Relógio de Parede</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|" class="dropdowwn__toggle">Utilidades<br>Domésticas</a>
-                <div class="dropdown__content">
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|BAN">Banheiro</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|COZ">Cozinha</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|GER">Geral</a>
-                  <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=UTL|ORG">Organizador</a>
-                </div>
-              </div>
-            </li>  
-            <li>
-              <div class="dropdown">
-                <a href="https://www.lojsnovi.com.br/listaproduto.aspx?id_categoria=PRO|" class="dropdowwn__toggle"><strong>Promoção</strong></a>
-              </div>
+              <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3"
+                >Dúvidas</a
+              >
             </li>
           </ul>
-          <div class="search">
-            <form action="">
-              <input type="text" placeholder="Buscar produtos...">
-              <button type="submit"><i class="fas fa-search search-icon"></i></button>
-            </form>
-          </div>
+          <div class="icon-box"></div>
         </div>
       </div>
     </header>
     <main>
-        <div class="container container--login">
-            <div class="login-box">
-                <div class="login-box__login">
-                    <div class="login-box__title">Fazer Login</div>
-                    <div class="login-box__subtitle">Já sou cliente Lojsnovi</div>
-                    <form action="">
-                        <label for="cnpj">CNPJ</label>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ de sua empresa">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="cnpj" placeholder="Digite sua senha">
-                        <button type="submit" class="login-box__button login-box__button--login">Entrar</button>
-                    </form>
-                    <a href="https://www.lojsnovi.com.br/esqueci-a-senha.aspx">Esqueci a senha</a>
-                </div>
-                <div class="login-box__divider">
-                    <div class="divider-vertical-line"></div>
-                    <div class="divider-horizontal-line"></div>
-                    <span class="divider-word">ou</span>
-                    <div class="divider-vertical-line"></div>
-                    <div class="divider-horizontal-line"></div>
-                </div>
-                <div class="login-box__register">
-                    <div class="login-box__title">Novo Cadastro</div>
-                    <div class="login-box__subtitle">Ainda não tenho uma conta</div>
-                    <a href="https://www.lojsnovi.com.br/cadastro.aspx" class="login-box__button login-box__button--new-account">Criar conta</a>
-                </div>
+      <div class="container container--login">
+        <div class="login-box">
+          <div class="login-box__row">
+            <div class="login-box__login">
+              <div class="login-box__title">Fazer Login</div>
+              <div class="login-box__subtitle">Já sou cliente Lojsnovi</div>
+              <form action="">
+                <label for="cnpj">CNPJ</label>
+                <input
+                  type="text"
+                  id="cnpj"
+                  name="cnpj"
+                  placeholder="Digite o CNPJ de sua empresa"
+                  maxlength="18"
+                />
+                <label for="password">Senha</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="cnpj"
+                  placeholder="Digite sua senha"
+                />
+                <button
+                  type="submit"
+                  class="login-box__button login-box__button--login"
+                >
+                  Entrar
+                </button>
+              </form>
+              <a href="https://www.lojsnovi.com.br/esqueci-a-senha.aspx"
+                >Esqueci a senha</a
+              >
             </div>
+            <div class="login-box__divider">
+              <div class="divider-vertical-line"></div>
+              <div class="divider-horizontal-line"></div>
+              <span class="divider-word">ou</span>
+              <div class="divider-vertical-line"></div>
+              <div class="divider-horizontal-line"></div>
+            </div>
+            <div class="login-box__register">
+              <div class="login-box__title">Novo Cadastro</div>
+              <div class="login-box__subtitle">Ainda não tenho uma conta</div>
+              <a
+                href="https://www.lojsnovi.com.br/cadastro.aspx"
+                class="login-box__button login-box__button--new-account"
+                >Criar conta</a
+              >
+            </div>
+          </div>
+          <div class="login-box__row nocnpj-box">
+            <span
+              ><strong>Não possui CNPJ?</strong> Entre em contato com a gente
+              por qualquer um de nossos canais!</span
+            >
+          </div>
         </div>
-
-
-        <div class="sitemap-group sitemap-group--brand-info">
-            <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
-            <span class="text-separator"> — </span><span>CNPJ: 49.671.589/0001-49</span><span class="text-separator"> | </span>Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP 01030-000</span>
-        </div>
+      </div>
     </main>
+    <footer>
+      <div class="footer-info">
+        <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
+        <span class="text-separator"> — </span
+        ><span>CNPJ: 49.671.589/0001-49</span
+        ><span class="text-separator"> | </span
+        ><span
+          >Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP
+          01030-000</span
+        >
+      </div>
+    </footer>
   </body>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/login.js"></script>
 </html>
