@@ -459,6 +459,7 @@ input:checked ~ .tab-content {
   padding: 0 24px;
   height: 64px;
   text-align: center;
+  line-height: 1.25;
 }
 
 /* Add background color and shadow to navbar links on hover */
