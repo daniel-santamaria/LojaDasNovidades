@@ -868,6 +868,28 @@ input:checked ~ .tab-content {
   display: none;
 }
 
+.container--custom-signature {
+  display: block;
+  width: 100%;
+  background-color: #3b3b3b;
+}
+
+.custom-signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.75;
+  text-align: center;
+  padding: 8px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.custom-signature--font {
+  font-weight: bold;
+}
 /*---------- MEDIA QUERIES ----------*/
 
 /* @media (min-width: 576px) {
@@ -1079,6 +1101,10 @@ input:checked ~ .tab-content {
 
   .text-separator {
     display: inline;
+  }
+
+  .custom-signature {
+    display: block;
   }
 }
 
