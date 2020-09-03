@@ -458,6 +458,7 @@ input:checked ~ .tab-content {
   align-items: center;
   padding: 0 24px;
   height: 64px;
+  text-align: center;
 }
 
 /* Add background color and shadow to navbar links on hover */
@@ -823,10 +824,6 @@ input:checked ~ .tab-content {
   text-align: center;
 }
 
-/* .sitemap-group:last-child {
-  margin-bottom: 0;
-} */
-
 .sitemap-group__title {
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
@@ -856,6 +853,9 @@ input:checked ~ .tab-content {
 }
 
 .sitemap-group--brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 16px 0;
   border-top: 0.75px solid #422f6b33;
   text-align: center;
@@ -871,7 +871,11 @@ input:checked ~ .tab-content {
 .container--custom-signature {
   display: block;
   width: 100%;
-  background-color: #3b3b3b;
+  background: linear-gradient(
+    90deg,
+    rgba(66, 47, 107, 0.2) 0%,
+    rgba(68, 140, 170, 0.2) 100%
+  );
 }
 
 .custom-signature {
@@ -883,8 +887,7 @@ input:checked ~ .tab-content {
   text-align: center;
   padding: 8px 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #fff;
+  font-size: 14px;
 }
 
 .custom-signature--font {
@@ -1094,6 +1097,7 @@ input:checked ~ .tab-content {
   }
   
   .sitemap-group--brand-info {
+    display: block;
     margin-top: 32px;
     text-align: center;
     line-height: 1.5;
