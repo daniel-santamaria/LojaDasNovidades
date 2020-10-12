@@ -23,7 +23,7 @@ cnpjInput.addEventListener('keydown', apagaRazaoSocial);
 
 function consultarCep() {
 
-	let cep = cepInput.value;
+	let cep = cepInput.value.replace(/[^0-9]/g, '');
 	
 	fetch(`https://viacep.com.br/ws/${cep}/json/`)
 		.then(function (response) {

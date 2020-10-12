@@ -113,14 +113,13 @@
               <h3>Informações sobre o cliente</h3>
 
               <div class="form-row">
-                <div class="form-group">
+                <div class="form-group col-6">
                   <label for="cnpj">CNPJ</label>
                   <input
                     type="text"
                     id="cnpj"
                     name="cnpj"
                     data-mask="00.000.000/0000-00"
-                    maxlength="18"
                     required
                   />
                 </div>
@@ -133,6 +132,8 @@
                     data-mask="000.000.000.000"
                     id="inscricaoEstadual"
                     name="inscricaoEstadual"
+                    placeholder='Caso não possua, informe "Isento"'
+                    required
                   />
                 </div>
               </div>
@@ -166,6 +167,7 @@
                     id="telefone"
                     name="telefone"
                     data-mask="(00) 0000-0000"
+                    placeholder="(DDD) + Telefone"
                     required
                   />
                 </div>
@@ -176,6 +178,7 @@
                     id="cel"
                     name="cel"
                     data-mask="(00) 00000-0000"
+                    placeholder="(DDD) + Celular"
                     required
                   />
                 </div>
@@ -185,6 +188,7 @@
                     type="text"
                     id="operadoraCel"
                     name="operadoraCel"
+                    placeholder="Por exemplo: Vivo, Claro, Nextel, TIM, Oi etc."
                   />
                 </div>
               </div>
@@ -194,7 +198,7 @@
             <div class="register-box__section">
               <h3>Endereço e Postagem</h3>
               <div class="form-row">
-                <div class="form-group">
+                <div class="form-group col-6">
                   <label for="cep">CEP</label>
                   <input
                     type="text"
@@ -213,19 +217,21 @@
                     class="form-control"
                     name="logradouro"
                     id="logradouro"
+                    required
                   />
                 </div>
                 <div class="form-group col-3">
                   <label for="numero">Número</label>
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     name="numero"
                     id="numero"
+                    required
                   />
                 </div>
                 <div class="form-group col-9">
-                  <label for="complemento">Complemento</label>
+                  <label for="complemento">Complemento (opcional)</label>
                   <input
                     type="text"
                     class="form-control"
@@ -242,6 +248,7 @@
                     class="form-control"
                     name="bairro"
                     id="bairro"
+                    required
                   />
                 </div>
                 <div class="form-group col-9">
@@ -251,11 +258,12 @@
                     class="form-control"
                     name="cidade"
                     id="cidade"
+                    required
                   />
                 </div>
                 <div class="form-group col-3">
                   <label for="estado">Estado</label>
-                  <select id="estado" name="estado">
+                  <select id="estado" name="estado" required>
                     <option value="" selected disabled>Selecione</option>
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
@@ -289,16 +297,15 @@
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="ref">Referência de Endereço</label>
-                  <input type="text" class="form-control" name="ref" id="ref" />
+                  <label for="ref">Referência de Endereço (opcional)</label>
+                  <input type="text" name="ref" id="ref" placeholder="Informe uma referência para facilitar a entrega de seus pedidos"/>
                 </div>
                 <div class="form-group">
                   <label for="transportadora"
-                    >Transportadora Preferencial</label
+                    >Transportadora Preferencial (opcional)</label
                   >
                   <input
                     type="text"
-                    class="form-control"
                     name="transportadora"
                     id="transportadora"
                   />
@@ -329,7 +336,7 @@
                 type="text"
                 id="reference"
                 name="reference"
-                placeholder="Indique uma referência comercial (nome e telefone)"
+                placeholder="Indique referências comerciais (nome e telefone)"
                 required
               />
             </div>
