@@ -37,7 +37,7 @@ function consultarCep() {
 			cidade.readOnly = true;
 
 			estado.value = endereco.uf;
-			estado.readOnly = true;
+			estado.disabled = true;
 
 			bairro.value  = endereco.bairro;
 			bairro.readOnly = true;
@@ -56,7 +56,7 @@ function apagaEndereco () {
 	cidade.readOnly = false;
 
 	estado.value = "";
-	estado.readOnly = false;
+	estado.disabled = false;
 
 	bairro.value  = "";
 	bairro.readOnly = false;
@@ -64,27 +64,25 @@ function apagaEndereco () {
 
 function consultarCnpj() {
 
-    let cnpj = cnpjInput.value;
-    
-    alert(cnpj)
+	let cnpj = cnpjInput.value.replace(/[^0-9]/g, '');
 	
-	fetch(`https://www.receitaws.com.br/v1/cnpj/${cnpj}`)
-		.then(function (response) {
-			return response.json();
-		})
-		.then(function (empresa) {
-			razaoSocial.value = empresa.nome;
-			razaoSocial.readOnly = true;
-		})
-		.catch(function (erro) {
-			cnpj.value = "";
-			alert('Erro ao consultar CNPJ');
-        })
+	$.ajax ({
+		'url': `https://www.receitaws.com.br/v1/cnpj/${cnpj}`,
+		'type': 'GET',
+		'dataType': 'jsonp',
+		'success': function(response) {
+			if(response.nome == undefined) {
+				alert("Erro ao consultar CNPJ");
+				cnpj.value = "";
+			} else {
+				razaoSocial.value = response.nome;
+				razaoSocial.readOnly = true;
+			}
+		}
+	})
 }
 
 function apagaRazaoSocial () {
 	razaoSocial.value = "";
 	razaoSocial.readOnly = false;
 }
-
-

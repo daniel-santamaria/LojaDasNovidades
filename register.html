@@ -119,6 +119,7 @@
                     type="text"
                     id="cnpj"
                     name="cnpj"
+                    data-mask="00.000.000/0000-00"
                     maxlength="18"
                     required
                   />
@@ -129,6 +130,7 @@
                   >
                   <input
                     type="text"
+                    data-mask="000.000.000.000"
                     id="inscricaoEstadual"
                     name="inscricaoEstadual"
                   />
@@ -163,7 +165,7 @@
                     type="text"
                     id="telefone"
                     name="telefone"
-                    placeholder="(xx) 3333-3333"
+                    data-mask="(00) 0000-0000"
                     required
                   />
                 </div>
@@ -173,7 +175,7 @@
                     type="text"
                     id="cel"
                     name="cel"
-                    placeholder="(xx) 99999-9999"
+                    data-mask="(00) 00000-0000"
                     required
                   />
                 </div>
@@ -198,6 +200,7 @@
                     type="text"
                     id="cep"
                     name="cep"
+                    data-mask="00000-000"
                     required
                   />
                 </div>
@@ -252,12 +255,36 @@
                 </div>
                 <div class="form-group col-3">
                   <label for="estado">Estado</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="estado"
-                    id="estado"
-                  />
+                  <select id="estado" name="estado">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                 </select>
                 </div>
               </div>
               <div class="form-row">
@@ -314,5 +341,7 @@
       </div>
     </main>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
   <script src="scripts/register.js"></script>
 </html>
