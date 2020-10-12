@@ -24,7 +24,7 @@
     />
     <meta name="keywords" content="atacado, presentes, decoração, importados" />
     <link rel="stylesheet" href="public/styles/global.css" />
-    <link rel="stylesheet" href="public/styles/login.css" />
+    <link rel="stylesheet" href="public/styles/reset.css" />
     <link rel="stylesheet" href="public/styles/header.css" />
     <link rel="stylesheet" href="public/styles/footer.css" />
     <link
@@ -101,85 +101,32 @@
       </div>
     </header>
     <main>
-      <div class="container container--login">
-        <div class="login-box">
-          <div class="login-box__row">
-            <div class="login-box__login">
-              <div class="login-box__title">Fazer Login</div>
-              <div class="login-box__subtitle">Já sou cliente Lojsnovi</div>
-              <form action="">
-                <label for="cnpj">CNPJ</label>
-                <input
-                  type="text"
-                  id="cnpj"
-                  name="cnpj"
-                  data-mask="00.000.000/0000-00"
-                  placeholder="Digite o CNPJ de sua empresa"
-                  maxlength="18"
-                />
-                <label for="password">Senha</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="cnpj"
-                  placeholder="Digite sua senha"
-                />
-                <button
-                  type="submit"
-                  class="login-box__button login-box__button--login"
-                >
-                  Entrar
-                </button>
-              </form>
-              <a href="reset.html"
-                >Esqueci a senha</a
-              >
-            </div>
-            <div class="login-box__divider">
-              <div class="divider-vertical-line"></div>
-              <div class="divider-horizontal-line"></div>
-              <span class="divider-word">ou</span>
-              <div class="divider-vertical-line"></div>
-              <div class="divider-horizontal-line"></div>
-            </div>
-            <div class="login-box__register">
-              <div class="login-box__title">Novo Cadastro</div>
-              <div class="login-box__subtitle">
-                Tenho CNPJ e quero me cadastrar
-              </div>
-              <a
-                href="register.html"
-                class="login-box__button login-box__button--new-account"
-                >Criar conta</a
-              >
-            </div>
+      <div class="container container--reset">
+        <div class="reset-box">
+          <div class="reset-box__title">Esqueceu a Senha?</div>
+          <div class="reset-box__subtitle">
+            Sem problema! Informe o seu CNPJ no campo abaixo e nossa equipe
+            entrará em contato com você o mais breve possível!
           </div>
-          <div class="login-box__row nocnpj-box">
-            <span
-              ><strong>Não possui CNPJ?</strong> Entre em contato com a gente
-              por qualquer um de nossos
-              <a
-                href="https://www.lojsnovi.com.br/contato.aspx"
-                class="link-text"
-                >canais</a
-              >!</span
-            >
-          </div>
+          <img
+            src="https://i.pinimg.com/originals/80/6d/b3/806db36624c5bed511cc1aef20f61755.gif"
+          />
+          <form action="" class="reset-form">
+            <div class="form-group">
+              <label for="cnpj">CNPJ</label>
+              <input
+                type="text"
+                id="cnpj"
+                name="cnpj"
+                data-mask="00.000.000/0000-00"
+                required
+              />
+            </div>
+            <button type="submit" class="reset-box__button">Enviar</button>
+          </form>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer-info">
-        <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
-        <span class="text-separator"> — </span
-        ><span>CNPJ: 49.671.589/0001-49</span
-        ><span class="text-separator"> | </span
-        ><span
-          >Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP
-          01030-000</span
-        >
-      </div>
-    </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
