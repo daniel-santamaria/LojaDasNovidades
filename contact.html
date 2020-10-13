@@ -24,7 +24,7 @@
     />
     <meta name="keywords" content="atacado, presentes, decoração, importados" />
     <link rel="stylesheet" href="public/styles/global.css" />
-    <link rel="stylesheet" href="public/styles/reset.css" />
+    <link rel="stylesheet" href="public/styles/contact.css" />
     <link rel="stylesheet" href="public/styles/header.css" />
     <link rel="stylesheet" href="public/styles/footer.css" />
     <link
@@ -86,7 +86,7 @@
               >
             </li>
             <li>
-              <a href="contact.html"
+              <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=2"
                 >Contato</a
               >
             </li>
@@ -101,33 +101,97 @@
       </div>
     </header>
     <main>
-      <div class="container container--reset">
-        <div class="reset-box">
-          <div class="reset-box__title">Esqueceu a Senha?</div>
-          <div class="reset-box__subtitle">
-            Sem problema! Informe o seu CNPJ no campo abaixo e nossa equipe
-            entrará em contato com você o mais breve possível!
-          </div>
-          <img
-            src="https://i.pinimg.com/originals/80/6d/b3/806db36624c5bed511cc1aef20f61755.gif"
-          />
-          <form action="" class="reset-form">
-            <div class="form-group">
-              <label for="cnpj">CNPJ</label>
-              <input
-                type="text"
-                id="cnpj"
-                name="cnpj"
-                data-mask="00.000.000/0000-00"
-                required
-              />
+      <div class="container container--login">
+        <div class="login-box">
+          <div class="login-box__row">
+            <div class="login-box__login">
+                <div class="login-box__title">Mande uma mensagem</div>
+              <div class="login-box__subtitle">
+                Ficaremos muito felizes em tirar suas
+                dúvidas e ouvir suas sugestões!
+              </div>
+              <form action="">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite o seu nome ou de sua empresa"
+                  required
+                />
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite o e-mail para contato"
+                  required
+                />
+                <label for="telefone">Telefone</label>
+                <input
+                  type="text"
+                  id="telefone"
+                  name="telefone"
+                  data-mask="(00) 000000000"
+                  placeholder="Digite o telefone para contato (DDD + Telefone)"
+                />
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  onkeyup="characterCounter()"
+                  name="mensagem"
+                  rows="5"
+                  maxlength="250"
+                  placeholder="Digite sua mensagem aqui. Conte-nos sobre sua experiência com a Lojsnovi, dê sugestões e tire suas dúvidas (max. 250 caracteres)"
+                  required
+                ></textarea>
+                <div id="character-counter"></div>
+                <button
+                  type="submit"
+                  class="login-box__button login-box__button--login"
+                >
+                  Enviar
+                </button>
+              </form>
             </div>
-            <button type="submit" class="reset-box__button">Enviar</button>
-          </form>
+            <div class="login-box__divider">
+              <div class="divider-vertical-line"></div>
+              <div class="divider-horizontal-line"></div>
+            </div>
+            <div class="login-box__register">
+              <div class="login-box__title">Outras formas de falar com a gente</div>
+              <div class="login-box__subtitle">
+                Utilize qualquer um de nossos canais abaixo para entrar em contato
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <!-- <footer>
+      <div class="footer-info">
+        <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
+        <span class="text-separator"> — </span
+        ><span>CNPJ: 49.671.589/0001-49</span
+        ><span class="text-separator"> | </span
+        ><span
+          >Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP
+          01030-000</span
+        >
+      </div>
+    </footer> -->
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script>
+    const counter = document.getElementById("character-counter");
+    const textarea = document.getElementById("mensagem");
+    const maxCharacter = textarea.maxLength;
+
+    counter.innerText = `${textarea.value.length}/${maxCharacter}`;
+
+    function characterCounter() {
+      counter.innerText = `${textarea.value.length}/${maxCharacter}`;
+    }
+  </script>
 </html>
