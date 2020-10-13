@@ -1,17 +1,22 @@
 /* GENERAL */
 
 body {
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
+    background: linear-gradient(
+    90deg,
+    rgba(66, 47, 107, 0.8) 0%,
+    rgba(68, 140, 170, 0.75) 100%
+  );
   }
   
-  /*---------- LOGIN BOX ----------*/
+  /*---------- contact BOX ----------*/
   
-  .container--login {
+  .container--contact {
     padding-top: 40px;
     padding-bottom: 40px;
   }
   
-  .login-box {
+  .contact-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,8 +27,8 @@ body {
     font-family: "Raleway", sans-serif;
   }
   
-  .login-box__login,
-  .login-box__register {
+  .contact-box__contact,
+  .contact-box__register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,33 +36,33 @@ body {
     margin: 24px 0px;
   }
   
-  .login-box__title {
+  .contact-box__title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
     text-align: center;
   }
   
-  .login-box__subtitle {
+  .contact-box__subtitle {
     font-size: 18px;
     margin-bottom: 24px;
     text-align: center;
   }
   
-  .login-box__login form {
+  .contact-box__contact form {
     margin-top: 16px;
     width: 100%;
   }
   
-  .login-box__login label {
+  .contact-box__contact label {
     display: block;
     margin-bottom: 4px;
     width: 100%;
     font-size: 16px;
   }
   
-  .login-box__login input,
-  .login-box__login textarea {
+  .contact-box__contact input,
+  .contact-box__contact textarea {
     display: block;
     padding: 8px;
     margin-bottom: 16px;
@@ -68,7 +73,7 @@ body {
     border-radius: 4px;
   }
 
-  .login-box__login textarea {
+  .contact-box__contact textarea {
       margin-bottom: 4px;
       resize: vertical;
   }
@@ -77,7 +82,7 @@ body {
       text-align: right;
   }
   
-  .login-box__button {
+  .contact-box__button {
     display: flex;
     justify-content: center;
     padding: 12px 16px;
@@ -91,24 +96,19 @@ body {
     transition: box-shadow 0.2s ease-in-out;
   }
   
-  .login-box__button--login {
+  .contact-box__button--contact {
     margin: 32px auto 16px auto;
   }
   
-  .login-box__button--new-account {
+  .contact-box__button--new-account {
     margin: 24px 0;
   }
   
-  .login-box__divider {
+  .contact-box__divider {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-  
-  .divider-word {
-    font-size: 20px;
-    margin: 8px;
   }
   
   .divider-vertical-line {
@@ -154,38 +154,38 @@ body {
   
   @media (min-width: 992px) {
     
-    /*---------- LOGIN BOX ----------*/
+    /*---------- contact BOX ----------*/
   
-    .container--login {
+    .container--contact {
       padding-top: 64px;
       padding-bottom: 64px;
     }
   
-    .login-box {
+    .contact-box {
       flex-direction: row;
       flex-wrap: wrap;
       padding: 16px;
     }
   
-    .login-box__row {
+    .contact-box__row {
       display: flex;
       width: 100%;
     }
   
-    .login-box__login,
-    .login-box__register {
+    .contact-box__contact,
+    .contact-box__register {
       padding: 0 40px;
     }
   
-    .login-box__button:hover {
+    .contact-box__button:hover {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     }
   
-    .login-box__button--new-account {
+    .contact-box__button--new-account {
       margin: 80px;
     }
   
-    .login-box__divider {
+    .contact-box__divider {
       flex-direction: column;
     }
   
