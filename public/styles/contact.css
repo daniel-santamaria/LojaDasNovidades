@@ -1,203 +1,194 @@
 /* GENERAL */
 
 body {
-    /* background-color: #f6f6f6; */
-    background: linear-gradient(
-    90deg,
-    rgba(66, 47, 107, 0.8) 0%,
-    rgba(68, 140, 170, 0.75) 100%
-  );
-  }
-  
+  background-color: #f6f6f6;
+}
+
+/*---------- contact BOX ----------*/
+
+.container--contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-box__contact,
+.contact-box__other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 24px 0px;
+}
+
+.contact-box__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.contact-box__subtitle {
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.contact-box__contact form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.contact-box__contact label {
+  display: block;
+  margin-bottom: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-box__contact input,
+.contact-box__contact textarea {
+  display: block;
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #422f6b;
+  border-radius: 4px;
+}
+
+.contact-box__contact textarea {
+  margin-bottom: 4px;
+  resize: vertical;
+}
+
+#character-counter {
+  text-align: right;
+}
+
+.contact-box__button {
+  display: flex;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 32px;
+  margin: 32px auto 16px auto;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  background-color: #28a745;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.contact-box__divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-vertical-line {
+  display: none;
+  border-right: 0.75px solid #422f6b66;
+  height: 80%;
+}
+
+.divider-horizontal-line {
+  border-bottom: 0.75px solid #422f6b66;
+  width: 100%;
+}
+
+.link-text {
+  font-style: italic;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-channel--local {
+  margin-bottom: 12px;
+}
+
+.channel-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+
+@media (min-width: 992px) {
   /*---------- contact BOX ----------*/
-  
+
   .container--contact {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
-  
+
   .contact-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 24px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
-    font-family: "Raleway", sans-serif;
-  }
-  
-  .contact-box__contact,
-  .contact-box__register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 24px 0px;
-  }
-  
-  .contact-box__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    text-align: center;
-  }
-  
-  .contact-box__subtitle {
-    font-size: 18px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  
-  .contact-box__contact form {
-    margin-top: 16px;
-    width: 100%;
-  }
-  
-  .contact-box__contact label {
-    display: block;
-    margin-bottom: 4px;
-    width: 100%;
-    font-size: 16px;
-  }
-  
-  .contact-box__contact input,
-  .contact-box__contact textarea {
-    display: block;
-    padding: 8px;
-    margin-bottom: 16px;
-    width: 100%;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    border: 1px solid #422f6b;
-    border-radius: 4px;
-  }
-
-  .contact-box__contact textarea {
-      margin-bottom: 4px;
-      resize: vertical;
-  }
-
-  #character-counter {
-      text-align: right;
-  }
-  
-  .contact-box__button {
-    display: flex;
-    justify-content: center;
-    padding: 12px 16px;
-    border-radius: 32px;
-    width: 100%;
-    font-size: 18px;
-    color: #fff;
-    background-color: #28a745;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  .contact-box__button--contact {
-    margin: 32px auto 16px auto;
-  }
-  
-  .contact-box__button--new-account {
-    margin: 24px 0;
-  }
-  
-  .contact-box__divider {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .divider-vertical-line {
-    display: none;
-    border-right: 0.75px solid #422f6b66;
-    height: 66%;
-  }
-  
-  .divider-horizontal-line {
-    border-bottom: 0.75px solid #422f6b66;
-    width: 100%;
-  }
-  
-  .sitemap-group--brand-info {
-    margin-top: 24px;
-    width: 100%;
-    background-color: #fff;
-  }
-  
-  .nocnpj-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     padding: 16px;
-    margin-bottom: 24px;
-    border-radius: 8px;
-    /* background-color: rgba(68, 140, 170, 0.6) */
+  }
+
+  .contact-box__row {
+    display: flex;
+    width: 100%;
+  }
+
+  .contact-box__contact,
+  .contact-box__other {
+    margin: 24px 40px;
+  }
+
+  .contact-box__other {
+    padding: 24px;
+    color: #fff;
     background: linear-gradient(
-      90deg,
-      rgba(68, 140, 170, 0.2) 0%,
-      rgba(66, 47, 107, 0.2) 100%
-    );
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    180deg,
+    rgba(66, 47, 107, 0.8) 0%,
+    rgba(68, 140, 170, 1.0) 100%
+  );
+    border-radius: 8px;
   }
-  
-  .link-text {
-    font-style: italic;
+
+  .contact-box__button:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   }
-  
-  /*---------- MEDIA QUERIES ----------*/
-  
-  @media (min-width: 992px) {
-    
-    /*---------- contact BOX ----------*/
-  
-    .container--contact {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
-  
-    .contact-box {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 16px;
-    }
-  
-    .contact-box__row {
-      display: flex;
-      width: 100%;
-    }
-  
-    .contact-box__contact,
-    .contact-box__register {
-      padding: 0 40px;
-    }
-  
-    .contact-box__button:hover {
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    }
-  
-    .contact-box__button--new-account {
-      margin: 80px;
-    }
-  
-    .contact-box__divider {
-      flex-direction: column;
-    }
-  
-    .divider-vertical-line {
-      display: flex;
-    }
-  
-    .divider-horizontal-line {
-      display: none;
-    }
-  
-    .nocnpj-box {
-      margin-bottom: 0;
-    }
+
+  .contact-box__divider {
+    flex-direction: column;
   }
+
+  .divider-vertical-line {
+    display: flex;
+  }
+
+  .divider-horizontal-line {
+    display: none;
+  }
+}
