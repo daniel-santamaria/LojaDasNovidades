@@ -4,6 +4,7 @@ const numero = document.getElementById("numero");
 const cidade = document.getElementById("cidade");
 const estado = document.getElementById("estado");
 const bairro = document.getElementById("bairro");
+
 const email = document.getElementById("email");
 const emailConfirm = document.getElementById("emailConfirm");
 
@@ -16,6 +17,23 @@ const outrosDescription = document.getElementById("outros-description");
 
 const cnpjInput = document.getElementById("cnpj");
 const razaoSocial = document.getElementById("razaoSocial");
+
+const inscricaoEstadual = document.getElementById("inscricaoEstadual");
+const noInscricaoEstadualCheck = document.getElementById("no-ie");
+
+noInscricaoEstadualCheck.addEventListener("click", function () {
+  if (this.checked) {
+    inscricaoEstadual.readOnly = true;
+    inscricaoEstadual.disabled = true;
+    inscricaoEstadual.required = false;
+    inscricaoEstadual.value = "";
+  }
+  if (!this.checked) {
+    inscricaoEstadual.readOnly = false;
+    inscricaoEstadual.disabled = false;
+    inscricaoEstadual.required = true;
+  }
+});
 
 radioFormDiv.addEventListener("click", function () {
   for (let i = 0; i < radioForm.length; i++) {
@@ -40,11 +58,35 @@ radioFormDiv.addEventListener("click", function () {
   }
 });
 
-window.addEventListener("keydown", function (event) {
-  if (event.keyCode == 13) {
-    event.preventDefault();
+emailConfirm.addEventListener("blur", function () {
+  if (email.value.trim()) {
+    if (email.value != emailConfirm.value) {
+      emailConfirm.style.border = "solid 1px #ea4a5a";
+      alert("Os e-mails são diferentes!");
+    } else {
+      emailConfirm.style.border = "solid 1px #34d058"
+    }
   }
 });
+
+email.addEventListener("blur", function () {
+  if (emailConfirm.value.trim()) {
+    if (email.value != emailConfirm.value) {
+      emailConfirm.style.border = "solid 1px #ea4a5a";
+      alert("Os e-mails são diferentes!");
+    } else {
+      emailConfirm.style.border = "solid 1px #34d058"
+    }
+  }
+});
+
+
+
+// window.addEventListener("keydown", function (event) {
+//   if (event.keyCode == 13) {
+//     event.preventDefault();
+//   }
+// });
 
 cepInput.addEventListener("blur", consultarCep);
 cepInput.addEventListener("keydown", apagaEndereco);
@@ -114,4 +156,13 @@ function consultarCnpj() {
 function apagaRazaoSocial() {
   razaoSocial.value = "";
   razaoSocial.readOnly = false;
+}
+
+function checkForm () {
+  let check = email.value == emailConfirm.value;
+  if(check) {
+    alert("Os e-mails são diferentes!");
+    event.preventDefault();
+  }
+  return check;
 }

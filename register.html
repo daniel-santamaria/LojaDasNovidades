@@ -106,7 +106,7 @@
             Preencha os campos abaixo para solicitar seu acesso e aguarde nossa
             equipe entrar em contato com você
           </div>
-          <form action="">
+          <form action="" onSubmit="return checkForm()">
             <div class="register-box__section">
               <h3>Informações sobre o cliente</h3>
 
@@ -178,7 +178,7 @@
                     type="text"
                     id="telefone"
                     name="telefone"
-                    data-mask="(00) 0000-0000"
+                    data-mask="(00) 000000000"
                     placeholder="Informe seu número preferencial para contato"
                     required
                   />
@@ -189,7 +189,7 @@
                     type="text"
                     id="cel"
                     name="cel"
-                    data-mask="(00) 00000-0000"
+                    data-mask="(00) 000000000"
                     placeholder="Informe outro número para contato"
                   />
                 </div>
