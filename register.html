@@ -161,25 +161,35 @@
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="tel">Telefone</label>
+                  <label for="email">Confirme o E-mail</label>
+                  <input
+                    type="email"
+                    id="emailConfirm"
+                    name="emailConfirm"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tel">Telefone 1</label>
                   <input
                     type="text"
                     id="telefone"
                     name="telefone"
                     data-mask="(00) 0000-0000"
-                    placeholder="(DDD) + Telefone"
+                    placeholder="Informe seu número preferencial para contato"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="cel">Celular</label>
+                  <label for="cel">Telefone 2 (opcional)</label>
                   <input
                     type="text"
                     id="cel"
                     name="cel"
                     data-mask="(00) 00000-0000"
-                    placeholder="(DDD) + Celular"
-                    required
+                    placeholder="Informe outro número para contato"
                   />
                 </div>
               </div>
@@ -301,24 +311,42 @@
             </div>
             <div class="register-box__section">
               <h3>Informações Adicionais</h3>
-              <label for="contactName">Nome de contato na empresa</label>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Nome de contato na empresa</label>
               <input
                 type="text"
                 id="contactName"
                 name="contactName"
                 required
               />
-
-              <label for="acquisiton">Como conheceu a Lojsnovi?</label>
-              <input
-                type="text"
-                id="acquisiton"
-                name="acquisiton"
-                placeholder="Quem indicou? Como nos conheceu?"
-                required
-              />
-
-              <label for="reference">Referência Comercial</label>
+                </div>
+                
+              </div>
+              <div class="form-row form-row--radio">
+                <div class="form-group">
+                  <div><span>Como conheceu a Lojsnovi?</span></div>
+                  <div class="form-group--radio" id="radioForm">
+                    <div class="radio-option"><input type="radio" id="google" name="acquisition" value="google"/><label for="google">Google</label></div>
+                    <div class="radio-option"><input type="radio" id="instagram" name="acquisition" value="instagram"/><label for="instagram">Instagram</label></div>
+                    <div class="radio-option"><input type="radio" id="facebook" name="acquisition" value="facebook"/><label for="facebook">Facebook</label></div>
+                    <div class="radio-option radio-option--hiddeninput">
+                      <input type="radio" id="indicacao" name="acquisition" value="indicacao"/>
+                      <label for="indicacao">Indicação</label>
+                      <input type="text" id="indicacao-description" name="indicacao-description" placeholder="Quem indicou?">
+                    </div>
+                    <div class="radio-option radio-option--hiddeninput">
+                      <input type="radio" id="outros" name="acquisition" value="outros"/>
+                      <label for="outros">Outros</label>
+                      <input type="text" id="outros-description" name="outros-description" placeholder="Por favor, descreva">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reference">Referência Comercial</label>
               <input
                 type="text"
                 id="reference"
@@ -326,6 +354,10 @@
                 placeholder="Indique referências comerciais (nome e telefone)"
                 required
               />
+              </div>
+                </div>
+                
+              
             </div>
             <button type="submit" class="register-box__button">
               Solicitar Cadastro
