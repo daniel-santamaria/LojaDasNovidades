@@ -86,9 +86,7 @@
               >
             </li>
             <li>
-              <a href="contact.html"
-                >Contato</a
-              >
+              <a href="contact.html">Contato</a>
             </li>
             <li>
               <a href="https://www.lojsnovi.com.br/conteudo.aspx?id_conteudo=3"
@@ -123,18 +121,26 @@
                     required
                   />
                 </div>
-                <div class="form-group">
-                  <label for="inscricaoEstadual"
-                    >Inscrição Estadual</label
-                  >
+              </div>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label for="inscricaoEstadual">Inscrição Estadual</label>
                   <input
                     type="text"
                     data-mask="000.000.000.000"
                     id="inscricaoEstadual"
                     name="inscricaoEstadual"
-                    placeholder='Caso não possua, informe "Isento"'
                     required
                   />
+                </div>
+                <div class="form-group col-6 form-group--checkbox">
+                  <input
+                    type="checkbox"
+                    id="no-ie"
+                    name="no-ie"
+                    value="Sem Inscrição Estadual/Isento"
+                  />
+                  <label for="no-ie">Não possuo/Isento</label>
                 </div>
               </div>
               <div class="form-row">
@@ -151,12 +157,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="email">E-mail</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                  />
+                  <input type="email" id="email" name="email" required />
                 </div>
               </div>
               <div class="form-row">
@@ -193,7 +194,6 @@
                   />
                 </div>
               </div>
-              
             </div>
 
             <div class="register-box__section">
@@ -293,7 +293,7 @@
                     <option value="SP">SP</option>
                     <option value="SE">SE</option>
                     <option value="TO">TO</option>
-                 </select>
+                  </select>
                 </div>
               </div>
               <div class="form-row">
@@ -314,50 +314,88 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="contactName">Nome de contato na empresa</label>
-              <input
-                type="text"
-                id="contactName"
-                name="contactName"
-                required
-              />
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="contactName"
+                    required
+                  />
                 </div>
-                
               </div>
               <div class="form-row form-row--radio">
                 <div class="form-group">
                   <div><span>Como conheceu a Lojsnovi?</span></div>
                   <div class="form-group--radio" id="radioForm">
-                    <div class="radio-option"><input type="radio" id="google" name="acquisition" value="google"/><label for="google">Google</label></div>
-                    <div class="radio-option"><input type="radio" id="instagram" name="acquisition" value="instagram"/><label for="instagram">Instagram</label></div>
-                    <div class="radio-option"><input type="radio" id="facebook" name="acquisition" value="facebook"/><label for="facebook">Facebook</label></div>
-                    <div class="radio-option radio-option--hiddeninput">
-                      <input type="radio" id="indicacao" name="acquisition" value="indicacao"/>
-                      <label for="indicacao">Indicação</label>
-                      <input type="text" id="indicacao-description" name="indicacao-description" placeholder="Quem indicou?">
+                    <div class="radio-option">
+                      <input
+                        type="radio"
+                        id="google"
+                        name="acquisition"
+                        value="google"
+                      /><label for="google">Google</label>
+                    </div>
+                    <div class="radio-option">
+                      <input
+                        type="radio"
+                        id="instagram"
+                        name="acquisition"
+                        value="instagram"
+                      /><label for="instagram">Instagram</label>
+                    </div>
+                    <div class="radio-option">
+                      <input
+                        type="radio"
+                        id="facebook"
+                        name="acquisition"
+                        value="facebook"
+                      /><label for="facebook">Facebook</label>
                     </div>
                     <div class="radio-option radio-option--hiddeninput">
-                      <input type="radio" id="outros" name="acquisition" value="outros"/>
+                      <input
+                        type="radio"
+                        id="indicacao"
+                        name="acquisition"
+                        value="indicacao"
+                      />
+                      <label for="indicacao">Indicação</label>
+                      <input
+                        type="text"
+                        id="indicacao-description"
+                        name="indicacao-description"
+                        placeholder="Quem indicou?"
+                      />
+                    </div>
+                    <div class="radio-option radio-option--hiddeninput">
+                      <input
+                        type="radio"
+                        id="outros"
+                        name="acquisition"
+                        value="outros"
+                      />
                       <label for="outros">Outros</label>
-                      <input type="text" id="outros-description" name="outros-description" placeholder="Por favor, descreva">
+                      <input
+                        type="text"
+                        id="outros-description"
+                        name="outros-description"
+                        placeholder="Por favor, descreva"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-                
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="reference">Referência Comercial</label>
-              <input
-                type="text"
-                id="reference"
-                name="reference"
-                placeholder="Indique referências comerciais (nome e telefone)"
-                required
-              />
-              </div>
+                  <input
+                    type="text"
+                    id="reference"
+                    name="reference"
+                    placeholder="Indique referências comerciais (nome e telefone)"
+                    required
+                  />
                 </div>
-                
-              
+              </div>
             </div>
             <button type="submit" class="register-box__button">
               Solicitar Cadastro

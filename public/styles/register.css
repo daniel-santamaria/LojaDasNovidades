@@ -52,6 +52,18 @@ body {
   width: 100%;
 }
 
+.form-group--checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+#no-ie {
+  position: inherit;
+  opacity: 1;
+  display: inline;
+  z-index: 1;
+}
+
 .form-group--radio {
   margin: 8px 0 20px 0;
 }
@@ -154,6 +166,10 @@ body {
 
   .register-box {
     padding: 40px;
+  }
+
+  .col-lg-12 {
+    max-width: 100%;
   }
 
   .col-lg-10 {
