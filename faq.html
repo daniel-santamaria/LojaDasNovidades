@@ -24,7 +24,7 @@
     />
     <meta name="keywords" content="atacado, presentes, decoração, importados" />
     <link rel="stylesheet" href="public/styles/global.css" />
-    <link rel="stylesheet" href="public/styles/reset.css" />
+    <link rel="stylesheet" href="public/styles/faq.css" />
     <link rel="stylesheet" href="public/styles/header.css" />
     <link rel="stylesheet" href="public/styles/footer.css" />
     <link
@@ -86,14 +86,10 @@
               >
             </li>
             <li>
-              <a href="contact.html"
-                >Contato</a
-              >
+              <a href="contact.html">Contato</a>
             </li>
             <li>
-              <a href="faq.html"
-                >Dúvidas</a
-              >
+              <a href="faq.html">Dúvidas</a>
             </li>
           </ul>
           <div class="icon-box"></div>
@@ -101,32 +97,78 @@
       </div>
     </header>
     <main>
-      <div class="container container--reset">
-        <div class="reset-box">
-          <div class="reset-box__title">Esqueceu a Senha?</div>
-          <div class="reset-box__subtitle">
-            Sem problema! Informe o seu CNPJ no campo abaixo e nossa equipe
-            entrará em contato com você o mais breve possível!
+      <div class="container container--login">
+        <div class="login-box__row">
+          <div class="login-box__title">Como podemos ajudar?</div>
+          <div class="login-box__subtitle">
+            Reunimos abaixo as principais informações sobre Pagamento, Frete e
+            Trocas para solucionar as suas principais dúvidas
           </div>
-          <img
-            src="https://i.pinimg.com/originals/80/6d/b3/806db36624c5bed511cc1aef20f61755.gif"
-          />
-          <form action="" class="reset-form">
-            <div class="form-group">
-              <label for="cnpj">CNPJ</label>
-              <input
-                type="text"
-                id="cnpj"
-                name="cnpj"
-                data-mask="00.000.000/0000-00"
-                required
-              />
+        </div>
+        <div class="login-box__row">
+          <div class="login-box__login">
+            <div class="login-box__title">Pagamento</div>
+            <div>
+                À vista - com depósito bancário em conta corrente
+                Cheques – com cadastro previamente aprovado
+                Cartão crédito/débito – somente na loja física
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
             </div>
-            <button type="submit" class="reset-box__button">Enviar</button>
-          </form>
+          </div>
+          <div class="login-box__divider">
+            <div class="divider-vertical-line"></div>
+            <div class="divider-horizontal-line"></div>
+          </div>
+          <div class="login-box__register">
+            <div class="login-box__title">Frete</div>
+            <div>
+                Transportadora/Frete – indicada e por conta e risco do cliente
+                Correio – liberado somente após o depósito em conta corrente
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="login-box__divider">
+            <div class="divider-vertical-line"></div>
+            <div class="divider-horizontal-line"></div>
+          </div>
+          <div class="login-box__register">
+            <div class="login-box__title">Trocas</div>
+            <div>
+                Qualquer reclamação deverá ser feita logo após o recebimento da mercadoria.
+                A troca será realizada nas seguintes condições:
+                Se for defeito de fabricação.
+                Se estiver na embalagem original e sem vestígio de uso.
+                Dentro do prazo de 90 dias após a data da compra.
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-info">
+        <span><strong>Lojsnovi - Loja das Novidades Ltda.</strong></span>
+        <span class="text-separator"> — </span
+        ><span>CNPJ: 49.671.589/0001-49</span
+        ><span class="text-separator"> | </span
+        ><span
+          >Rua Florêncio de Abreu, 164 - Centro - São Paulo/SP - CEP
+          01030-000</span
+        >
+      </div>
+    </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
