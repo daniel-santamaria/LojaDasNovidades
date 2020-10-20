@@ -159,10 +159,10 @@ function apagaRazaoSocial() {
 }
 
 function checkForm () {
-  let check = email.value == emailConfirm.value;
-  if(check) {
+  if(email.value == emailConfirm.value) {
+    return email.value == emailConfirm.value
+  } else {
     alert("Os e-mails são diferentes!");
-    event.preventDefault();
+    return email.value == emailConfirm;
   }
-  return check;
 }
