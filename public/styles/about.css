@@ -55,6 +55,125 @@
     border-bottom: 0.75px solid #422f6b66;
     width: 100%;
   }
+
+  .button-about {
+    /* display: flex; */
+    align-items: center;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: rgb(129, 92, 209);
+    border-radius: 4px;
+  }
+
+  .container--visit {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .title-line--visit {
+    display: flex;
+  }
+  
+  .visit-background {
+    background: url("../images/banner-02.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .color-layer {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(66, 47, 107, 0.8) 0%,
+      rgba(68, 140, 170, 0.75) 100%
+    );
+  }
+  
+  .container--visit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .visit-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .title-line--visit {
+    display: none;
+    width: 50%;
+    border-bottom: 0.75px solid #fff;
+  }
+  
+  .visit-title {
+    margin: 0 12px;
+    width: 100%;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .visit__content-box {
+    width: 80%;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+  }
+  
+  .visit__content-box-heading {
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .visit__content-box:nth-child(3),
+  .visit__content-box:nth-child(4) {
+    font-size: 18px;
+  }
+  
+  .map-link {
+    display: flex;
+    padding: 12px 20px;
+    margin-top: 16px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    color: #422f6b;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s;
+  }
+  
+  .map-link:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .map-link__text {
+    margin-left: 8px;
+  }
+  
+
+  .visit__content-box {
+    width: 66%;
+  }
   
   /*---------- MEDIA QUERIES ----------*/
   
