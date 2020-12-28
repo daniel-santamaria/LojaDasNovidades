@@ -65,20 +65,6 @@
   );
 }
 
-/* Section custom containers */
-
-/* .custom-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .custom-container--flex {
   display: flex;
   flex-wrap: wrap;
@@ -150,8 +136,6 @@
   width: 100%;
 }
 
-/* About */
-
 .details-subsection {
   display: flex;
   flex-direction: column;
@@ -194,7 +178,6 @@ hr {
   width: 80%;
   height: auto;
   display: flex;
-  /* padding: 0 16px; */
   margin: 0 auto;
 }
 
@@ -262,84 +245,3 @@ hr {
   }
   
 }
-
-/* 
-@media (max-width: 768px) {
-  .custom-container--landing {
-    flex-direction: column;
-  }
-
-  .box {
-    width: 100%;
-  }
-
-  .box--landing {
-    width: 80%;
-  }
-
-  .box--contact {
-    padding-left: 32px;
-  }
-
-  .title-landing,
-  .title-contact {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .subtitle-landing {
-    text-align: center;
-  }
-
-  .call-to-action--landing {
-    align-self: center;
-  }
-
-  .about-subsection,
-  .contact-subsection {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-subsection:last-of-type {
-    flex-direction: column-reverse;
-  }
-
-  .title-about,
-  .content-about {
-    text-align: center;
-  }
-
-  .subtitle-about {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .image-about {
-    width: 88%;
-    margin-bottom: 24px;
-    padding: 0;
-  }
-
-  .contact-channel {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .contact-icon {
-    margin: 4px 0;
-  }
-
-  .contact-email,
-  .contact-whatsapp {
-    font-size: 16px;
-  }
-
-  .custom-container--footer {
-    flex-direction: column;
-  }
-
-  .footer__block {
-    text-align: center;
-  }
-} */
