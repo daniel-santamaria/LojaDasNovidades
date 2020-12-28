@@ -1,199 +1,285 @@
-/* GENERAL */
+/* Parallax effect - font https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
 
-/*---------- LOGIN BOX ----------*/
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
 
-.container--faq {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-family: "Raleway", sans-serif;
-    line-height: 1.5;
+.parallax__group {
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+/* Configurado para não ter altura fixa */
+.parallax__group--details,
+.parallax__group--sitemap {
+  height: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Ajustado para exibir todo o conteúdo */
+.parallax__layer--details {
+  position: static;
+}
+
+.parallax__layer--back {
+  background-image: url("../images/banner-02.png");
+  background-position-x: -25vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2.05);
+  margin: 0px;
+}
+
+.parallax__layer--base {
+  padding: 24px 0;
+  transform: translateZ(0);
+}
+
+.parallax__layer--base--solid {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 16px rgba(0, 0, 0, 0.25);
+}
+
+.color-layer {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(66, 47, 107, 0.8) 0%,
+    rgba(68, 140, 170, 0.75) 100%
+  );
+}
+
+/* Section custom containers */
+
+/* .custom-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.custom-container--flex {
+  display: flex;
+  height: 100%;
+  align-items: center
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 48px;
+  line-height: 1.25;
+}
+
+.custom-container--details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.title-main {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.subtitle-main {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px 0;
+  color: #fff;
+}
+
+.call-to-action {
+  display: flex;
+  padding: 12px 20px;
+  margin-top: 16px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  color: #422f6b;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+
+.call-to-action:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.call-to-action--main {
+  align-self: flex-start;
+}
+
+.call-to-action--details {
+  margin: 16px 0;
+  border: 1px solid #422f6b;
+  align-self: flex-start;
+}
+
+.box--call-to-action {
+  width: 100%
+}
+
+/* About */
+
+.details-subsection {
+  display: flex;
+}
+
+hr {
+  width: 100%;
+  margin: 0px 20%;
+  border-top: 0.5px solid #422f6b33;
+}
+
+.title-details {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: rgb(68, 140, 170);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle-details {
+  color: #3b3b3b;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.content-details {
+  color: #3b3b3b;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+}
+
+.image-details {
+  width: 50%;
+  height: auto;
+  display: flex;
+  padding: 0 40px;
+  margin: auto;
+}
+
+.content--call-to-action {
+  color: #3b3b3b;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  text-align: center;
+  width: 80%;
+  margin: 16px auto;
+}
+
+
+
+/* 
+@media (max-width: 768px) {
+  .custom-container--landing {
+    flex-direction: column;
   }
-  
-  .faq-box__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 12px;
+
+  .box {
+    width: 100%;
+  }
+
+  .box--landing {
+    width: 80%;
+  }
+
+  .box--contact {
+    padding-left: 32px;
+  }
+
+  .title-landing,
+  .title-contact {
+    font-size: 32px;
     text-align: center;
   }
-  
-  .faq-box__subtitle {
-    font-size: 18px;
-    margin-bottom: 24px;
+
+  .subtitle-landing {
     text-align: center;
   }
-  
-  .faq-box__title--section {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-  
-  .questions,
-  .answers {
-    margin: 24px 0;
-  }
-  
-  .questions ul {
-    margin: 8px 0 20px 0;
-    padding: 0 24px;
-  }
-  
-  .questions a {
-    text-decoration: underline;
-  }
-  
-  .answer {
-    margin-bottom: 24px;
-  }
-  
-  .answer .faq-box__title {
-    margin-bottom: 8px;
-    text-align: left;
-  }
-  
-  
-  .divider-horizontal-line {
-    border-bottom: 0.75px solid #422f6b66;
-    width: 100%;
+
+  .call-to-action--landing {
+    align-self: center;
   }
 
-  .button-about {
-    /* display: flex; */
-    align-items: center;
-    padding: 8px 12px;
-    color: #fff;
-    background-color: rgb(129, 92, 209);
-    border-radius: 4px;
-  }
-
-  .container--visit {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  .title-line--visit {
-    display: flex;
-  }
-  
-  .visit-background {
-    background: url("../images/banner-02.png");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .color-layer {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(66, 47, 107, 0.8) 0%,
-      rgba(68, 140, 170, 0.75) 100%
-    );
-  }
-  
-  .container--visit {
-    display: flex;
+  .about-subsection,
+  .contact-subsection {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
-  
-  .visit-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  .title-line--visit {
-    display: none;
-    width: 50%;
-    border-bottom: 0.75px solid #fff;
-  }
-  
-  .visit-title {
-    margin: 0 12px;
-    width: 100%;
-    font-size: 40px;
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-  }
-  
-  .visit__content-box {
-    width: 80%;
-    margin-bottom: 32px;
-    text-align: center;
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-size: 22px;
-  }
-  
-  .visit__content-box-heading {
-    margin-bottom: 8px;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .visit__content-box:nth-child(3),
-  .visit__content-box:nth-child(4) {
-    font-size: 18px;
-  }
-  
-  .map-link {
-    display: flex;
-    padding: 12px 20px;
-    margin-top: 16px;
-    border-radius: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    color: #422f6b;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    transition: all 0.4s;
-  }
-  
-  .map-link:hover {
-    background: rgba(255, 255, 255, 1);
-  }
-  
-  .map-link__text {
-    margin-left: 8px;
-  }
-  
 
-  .visit__content-box {
-    width: 66%;
+  .about-subsection:last-of-type {
+    flex-direction: column-reverse;
   }
-  
-  /*---------- MEDIA QUERIES ----------*/
-  
-  @media (min-width: 992px) {
-    /*---------- LOGIN BOX ----------*/
-  
-    .container--faq {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
-  
-    .faq-box__title {
-      text-align: left;
-    }
-  
-    .faq-box__title--section {
-      text-align: left;
-    }
-  
-    .faq-box__subtitle {
-      text-align: left;
-    }
+
+  .title-about,
+  .content-about {
+    text-align: center;
   }
+
+  .subtitle-about {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .image-about {
+    width: 88%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .contact-channel {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-icon {
+    margin: 4px 0;
+  }
+
+  .contact-email,
+  .contact-whatsapp {
+    font-size: 16px;
+  }
+
+  .custom-container--footer {
+    flex-direction: column;
+  }
+
+  .footer__block {
+    text-align: center;
+  }
+} */

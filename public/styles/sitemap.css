@@ -1,0 +1,124 @@
+/* ---------- SITEMAP ----------*/
+
+.sitemap {
+  width: 100%;
+  padding: 32px 0 0 0;
+  background-color: #f6f6f6;
+}
+
+.container--sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sitemap-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.sitemap-group__title {
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sitemap-group ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap-group li {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.contact-channel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contact-channel__icon {
+  font-size: 20px;
+  margin: 0 12px 0 0;
+}
+
+.sitemap-group--brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 0.75px solid #422f6b33;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0;
+  line-height: 1.75;
+}
+
+.text-separator {
+  display: none;
+}
+
+.container--custom-signature {
+  display: block;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(66, 47, 107, 0.2) 0%,
+    rgba(68, 140, 170, 0.2) 100%
+  );
+}
+
+.custom-signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.75;
+  text-align: center;
+  padding: 8px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.custom-signature--font {
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .container--sitemap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sitemap-group {
+    display: block;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .sitemap-group--brand-info {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .text-separator {
+    display: inline;
+  }
+
+  .custom-signature {
+    display: block;
+  }
+}
