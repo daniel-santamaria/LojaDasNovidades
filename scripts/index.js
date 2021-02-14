@@ -1,5 +1,6 @@
 const cover = document.getElementById('cover');
 const sideMenuButton = document.getElementById('menuButton');
+const subcategoriesTrigger = document.getElementById('subcategoriesTrigger');
 const sidenavCategories = document.querySelectorAll('input[type="checkbox"]');
 
 cover.addEventListener('click', function() {
@@ -10,6 +11,9 @@ sideMenuButton.addEventListener('click', function() {
     toggleSideMenu();
 });
 
+subcategoriesTrigger.addEventListener('click', function() {
+    toggleSideMenu();
+});
 
 function toggleSideMenu() {
     document.body.classList.toggle('sidenav-active');  

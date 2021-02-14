@@ -137,38 +137,6 @@ body {
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.col-12 {
-  max-width: 100%;
-}
-
-.col-10 {
-  max-width: calc(83% - 8px);
-}
-
-.col-9 {
-  max-width: calc(75% - 8px);
-}
-
-.col-8 {
-  max-width: calc(66% - 8px);
-}
-
-.col-6 {
-  max-width: calc(50% - 8px);
-}
-
-.col-4 {
-  max-width: calc(33% - 8px);
-}
-
-.col-3 {
-  max-width: calc(25% - 8px);
-}
-
-.col-2 {
-  max-width: calc(16% - 8px);
-}
-
 /*---------- MEDIA QUERIES ----------*/
 
 @media (min-width: 992px) {
@@ -179,38 +147,6 @@ body {
 
   .register-box {
     padding: 40px;
-  }
-
-  .col-lg-12 {
-    max-width: 100%;
-  }
-
-  .col-lg-10 {
-    max-width: calc(83% - 8px);
-  }
-
-  .col-lg-9 {
-    max-width: calc(75% - 8px);
-  }
-
-  .col-lg-8 {
-    max-width: calc(66% - 8px);
-  }
-
-  .col-lg-6 {
-    max-width: calc(50% - 8px);
-  }
-
-  .col-lg-4 {
-    max-width: calc(33% - 8px);
-  }
-
-  .col-lg-3 {
-    max-width: calc(25% - 8px);
-  }
-
-  .col-lg-2 {
-    max-width: calc(16% - 8px);
   }
 
   .form-group--checkbox {
