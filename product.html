@@ -22,9 +22,10 @@
   <link rel="stylesheet" href="public/styles/global.css" />
   <link rel="stylesheet" href="public/styles/header.css" />
   <link rel="stylesheet" href="public/styles/breadcrumb.css" />
-  <link rel="stylesheet" href="public/styles/category-n1.css" />
+  <link rel="stylesheet" href="public/styles/product.css" />
+  <link rel="stylesheet" href="public/styles/product-card.css" />
+  <link rel="stylesheet" href="public/styles/mini-banners.css" />
   <link rel="stylesheet" href="public/styles/sitemap.css" />
-  <link rel="stylesheet" href="public/styles/product-card.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/08e1929a44.js" crossorigin="anonymous"></script>
 </head>
@@ -300,6 +301,7 @@
     </div>
   </header>
   <main>
+
     <div class="container breadcrumb">
       <a href="index.html">
         <i class="fas fa-home"></i>
@@ -307,40 +309,58 @@
       <i class="fas fa-chevron-right breadcrumb__icon"></i>
       <span>Cozinha</span>
     </div>
-    <div class="container showcase">
-      <div class="showcase__subcategories">
-        <div class="showcase__categories-info">
-          <div class="showcase__title">Cozinha</div>
-          <div class="showcase__qtd">20 produtos</div>
+
+    <div class="container container--product">
+      <div class="product-box col-12 col-md-7">
+        <div class="product__title">Título do Produto</div>
+        <div
+          style="background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');background-position:center;background-repeat:no-repeat;width:100%;height:400px;background-size:contain">
         </div>
-        <ul>
-          <li><a href="">Novidades</a></li>
-          <li><a href="">Café e Chá</a></li>
-          <li><a href="">Canecas</a></li>
-          <li><a href="">Garrafas</a></li>
-          <li><a href="">Jarras e Copos</a></li>
-          <li><a href="">Pratos e Tigelas</a></li>
-          <li><a href="">Potes em Geral</a></li>
-          <li><a href="">Utensílios</a></li>
-        </ul>
       </div>
-      <div class="showcase__products">
-        <div class="showcase__categories-info showcase__categories-info--sm">
-          <div>
-            <div class="showcase__title">Cozinha</div>
-          <div class="showcase__qtd">20 produtos</div>
+      <div class="product-box product-box--info col-12 col-md-5">
+        <div class="product__title product__title--lg">Título do Produto</div>
+        <span class="product__code">Código xyz</span>
+        <div class="product__price">
+          <div class="product__price-word">Preço</div>
+          <div class="product__price-value">R$ 1234,56</div>
+        </div>
+        <form class="product__add-form" action="">
+          <div class="product__quantity-selector">
+            <div class="product__quantity-button">
+              <i class="fas fa-minus"></i>
+            </div>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
+            <div class="product__quantity-button">
+              <i class="fas fa-plus"></i>
+            </div>
           </div>
-          <div class="show-subcategories" id="subcategoriesTrigger">
-            Ver subcategorias
+          <button type="" class="product__add-button">
+            <i class="fas fa-shopping-cart add-icon"></i>
+            <span>Adicionar</span>
+          </button>
+        </form>
+        <div class="product__info-summary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error cumque architecto dolorem nemo, ut,
+          dolore, quis inventore aperiam enim ea dignissimos omnis consectetur itaque obcaecati tenetur. Deserunt cumque
+          inventore qua...
+          <div class="product__info-summary-link">
+            <a href="#info">Ver mais</a>
           </div>
+
+        </div>
       </div>
-        
-        <div class="showcase__product-list">
+    </div>
 
-          <div class="product-card col-12 col-sm-6 col-md-4">
+    <div class="other-products">
+      <div class="container">
+        <div class="other-products__title">
+          Outros produtos nesta categoria...
+        </div>
+        <div class="other-products__list">
+          <div class="product-card">
             <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
+              background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
+            "></a>
             <div class="product-card__divider"></div>
             <a href="" class="product-card__name">Nome do Produto</a>
             <span class="product-card__price">R$ 12,34</span>
@@ -359,17 +379,15 @@
                 <span>Adicionar</span>
               </button>
             </form>
-            <a href="product.html" class="product-card__details-button">
+            <a href="" class="product-card__details-button">
               <span>Ver detalhes</span>
             </a>
           </div>
 
-
-
-          <div class="product-card col-12 col-sm-6 col-md-4">
+          <div class="product-card">
             <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
+              background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
+            "></a>
             <div class="product-card__divider"></div>
             <a href="" class="product-card__name">Nome do Produto</a>
             <span class="product-card__price">R$ 12,34</span>
@@ -388,16 +406,16 @@
                 <span>Adicionar</span>
               </button>
             </form>
-            <a href="product.html" class="product-card__details-button">
+            <a href="" class="product-card__details-button">
               <span>Ver detalhes</span>
             </a>
           </div>
 
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
+
+          <div class="product-card">
             <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
+              background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
+            "></a>
             <div class="product-card__divider"></div>
             <a href="" class="product-card__name">Nome do Produto</a>
             <span class="product-card__price">R$ 12,34</span>
@@ -416,16 +434,15 @@
                 <span>Adicionar</span>
               </button>
             </form>
-            <a href="product.html" class="product-card__details-button">
+            <a href="" class="product-card__details-button">
               <span>Ver detalhes</span>
             </a>
           </div>
 
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
+          <div class="product-card">
             <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
+              background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
+            "></a>
             <div class="product-card__divider"></div>
             <a href="" class="product-card__name">Nome do Produto</a>
             <span class="product-card__price">R$ 12,34</span>
@@ -444,217 +461,74 @@
                 <span>Adicionar</span>
               </button>
             </form>
-            <a href="product.html" class="product-card__details-button">
+            <a href="" class="product-card__details-button">
               <span>Ver detalhes</span>
             </a>
           </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          <div class="product-card col-12 col-sm-6 col-md-4">
-            <a href="" class="product-card__image" style="
-                background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');
-              "></a>
-            <div class="product-card__divider"></div>
-            <a href="" class="product-card__name">Nome do Produto</a>
-            <span class="product-card__price">R$ 12,34</span>
-            <form class="product-card__add-form" action="">
-              <div class="product-card__quantity-selector">
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-minus"></i>
-                </div>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                <div class="product-card__quantity-button">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <button type="" class="product-card__add-button">
-                <i class="fas fa-shopping-cart add-icon"></i>
-                <span>Adicionar</span>
-              </button>
-            </form>
-            <a href="product.html" class="product-card__details-button">
-              <span>Ver detalhes</span>
-            </a>
-          </div>
-
-          
-          
 
         </div>
 
-        <div class="category-see-all">
-          <a href="#" class="see-all-button">Ver mais</a>
+      </div>
+    </div>
+
+    <div class="product__info" id="info">
+      <div class="container">
+        <div class="product-info__title">
+          Descrição
         </div>
+        <div class="product-info__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum temporibus, fugit maxime earum aliquam
+          necessitatibus, molestias quas facere, architecto vel magni! Perspiciatis dolores quibusdam incidunt
+          voluptatem consequatur eligendi porro ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+          temporibus obcaecati optio natus quasi molestiae officia eius! Excepturi tenetur autem dolore odio sunt, atque
+          nam labore iste. Consectetur, ratione in. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatibus placeat, minus culpa amet blanditiis numquam veniam tempora voluptatem ullam rerum voluptas.
+          Commodi consequatur mollitia eaque ipsa dolorum aliquam. Doloremque, quis?
+        </div>
+      </div>
 
+    </div>
 
+    <div class="mini-banners mini-banners--top">
+      <div class="container container--mini-banners">
+        <div class="mini-banner-item">
+          <div class="mini-banner-item-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="mini-banner-item-info">
+            Produtos <b>Nacionais</b> e <b>Importados</b>
+          </div>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="vertical-divider"></div>
+        <div class="mini-banner-item">
+          <div class="mini-banner-item-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <div class="mini-banner-item-info">
+            Vendas por <b>atacado</b> para todo o Brasil
+          </div>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="vertical-divider"></div>
+        <div class="mini-banner-item">
+          <div class="mini-banner-item-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="mini-banner-item-info">
+            <b>Qualidade</b> e <b>Preços Competitivos</b>
+          </div>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="vertical-divider"></div>
+        <div class="mini-banner-item">
+          <div class="mini-banner-item-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <div class="mini-banner-item-info">
+            <b>Atendimento Personalizado</b>
+          </div>
+        </div>
       </div>
     </div>
 

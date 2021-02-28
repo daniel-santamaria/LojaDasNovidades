@@ -87,6 +87,8 @@
   font-size: 16px;
   min-width: 0;
   text-align: center;
+  border-radius: 4px;
+  border: 1px solid #422f6baa;
 }
 
 .product-card__add-form input::-webkit-outer-spin-button,

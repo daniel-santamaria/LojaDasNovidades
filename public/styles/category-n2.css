@@ -1,21 +1,8 @@
-.breadcrumb {
-  margin: 32px auto;
-  color: #422f6b;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-.breadcrumb__icon {
-  margin: 0 8px;
-}
-
 .showcase {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 33vh;
 }
-
-
 
 .showcase__categories-info {
   margin-bottom: 24px;
