@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="public/styles/breadcrumb.css" />
   <link rel="stylesheet" href="public/styles/product.css" />
   <link rel="stylesheet" href="public/styles/product-card.css" />
+  <link rel="stylesheet" href="public/styles/product-carousel.css" />
   <link rel="stylesheet" href="public/styles/mini-banners.css" />
   <link rel="stylesheet" href="public/styles/sitemap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
@@ -311,11 +312,58 @@
     </div>
 
     <div class="container container--product">
-      <div class="product-box col-12 col-md-7">
+
+
+      <div class="product-box product-box--images col-12 col-md-7">
         <div class="product__title">Título do Produto</div>
-        <div
-          style="background-image: url('https://www.lojsnovi.com.br/images/728261.jpg');background-position:center;background-repeat:no-repeat;width:100%;height:400px;background-size:contain">
+
+
+
+        <div class="carousel-container">
+          <div class="carousel my-carousel carousel--translate carousel--thumb">
+            <input class="carousel__activator" type="radio" name="carousel" id="A" checked="checked" />
+            <input class="carousel__activator" type="radio" name="carousel" id="B" />
+            <input class="carousel__activator" type="radio" name="carousel" id="C" />
+            <input class="carousel__activator" type="radio" name="carousel" id="D" />
+            <input class="carousel__activator" type="radio" name="carousel" id="E" />
+            <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="E"></label>
+              <label class="carousel__control carousel__control--forward" for="B"> </label>
+            </div>
+            <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="A"></label>
+              <label class="carousel__control carousel__control--forward" for="C"> </label>
+            </div>
+            <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="B"></label>
+              <label class="carousel__control carousel__control--forward" for="D"></label>
+            </div>
+            <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="C"></label>
+              <label class="carousel__control carousel__control--forward" for="E"> </label>
+            </div>
+            <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="D"></label>
+              <label class="carousel__control carousel__control--forward" for="A"></label>
+            </div>
+            <div class="carousel__track">
+              <li class="carousel__slide"></li>
+              <li class="carousel__slide"></li>
+              <li class="carousel__slide"></li>
+              <li class="carousel__slide"></li>
+              <li class="carousel__slide"></li>
+            </div>
+            <div class="carousel__indicators">
+              <label class="carousel__indicator" for="A"></label>
+              <label class="carousel__indicator" for="B"></label>
+              <label class="carousel__indicator" for="C"></label>
+              <label class="carousel__indicator" for="D"></label>
+              <label class="carousel__indicator" for="E"></label>
+            </div>
+          </div>
         </div>
+
+
       </div>
       <div class="product-box product-box--info col-12 col-md-5">
         <div class="product__title product__title--lg">Título do Produto</div>
@@ -480,10 +528,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum temporibus, fugit maxime earum aliquam
           necessitatibus, molestias quas facere, architecto vel magni! Perspiciatis dolores quibusdam incidunt
           voluptatem consequatur eligendi porro ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-          temporibus obcaecati optio natus quasi molestiae officia eius! Excepturi tenetur autem dolore odio sunt, atque
-          nam labore iste. Consectetur, ratione in. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatibus placeat, minus culpa amet blanditiis numquam veniam tempora voluptatem ullam rerum voluptas.
-          Commodi consequatur mollitia eaque ipsa dolorum aliquam. Doloremque, quis?
+          temporibus obcaecati optio natus quasi molestiae officia eius!
         </div>
       </div>
 
