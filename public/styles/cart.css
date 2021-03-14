@@ -1,0 +1,122 @@
+.cart__title {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #422f6b;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16vh;
+}
+
+.cart__items {
+  width: 100%;
+}
+
+.cart__details {
+  position: sticky;
+  top: 16px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00000033;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.cart-details__price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-details__price-word {
+  margin-right: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+}
+
+.cart-details__price-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+  font-weight: bold;
+}
+
+.cart-notes {
+  margin: 24px 0;
+}
+
+.cart-notes label,
+.cart-notes textarea {
+  width: 100%;
+}
+
+.cart-notes label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+}
+
+.cart-notes textarea {
+  margin-top: 8px;
+  resize: vertical;
+  padding: 4px;
+  min-height: 64px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.cart-product-card__complete-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background-color: #422f6b;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.add-icon {
+  margin-right: 12px;
+}
+
+@media (min-width: 576px) {
+  .cart__details {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .cart__details {
+    padding: 16px;
+    box-shadow: none;
+  }
+
+  .cart-details__price {
+    justify-content: space-between;
+  }
+
+  .cart-notes {
+    margin: 32px 0;
+  }
+}
