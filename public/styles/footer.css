@@ -20,9 +20,6 @@
   @media (min-width: 992px) {
      
     .footer-info {
-      position: absolute;
-      bottom: 0;
-      margin: 0;
       display: block;
       text-align: center;
       line-height: 1.5;
