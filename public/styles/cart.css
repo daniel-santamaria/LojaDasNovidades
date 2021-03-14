@@ -103,9 +103,6 @@
   }
 }
 
-@media (min-width: 768px) {
-}
-
 @media (min-width: 992px) {
   .cart__details {
     padding: 16px;
