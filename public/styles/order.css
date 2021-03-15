@@ -128,10 +128,6 @@
   text-transform: uppercase;
 }
 
-.add-icon {
-  margin-right: 12px;
-}
-
 @media (min-width: 576px) {
   .cart__details {
     padding: 12px;
@@ -144,8 +140,6 @@
   .cart-details__quantity--md {
     display: block;
   }
-
-  
 }
 
 @media (min-width: 992px) {
@@ -159,7 +153,7 @@
   }
 
   .cart-notes {
-    margin: 32px 0;
+    margin-top: 32px;
   }
   .order__itens-title {
     display: none;
