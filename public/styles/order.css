@@ -1,0 +1,167 @@
+.order__title {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #422f6b;
+}
+
+.order__itens-title {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #422f6b;
+}
+
+.order__notice {
+  margin: 24px 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #422f6b;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 32px;
+}
+
+.cart__items {
+  width: 100%;
+}
+
+.cart__details {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00000033;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.cart-details__price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-details__price-un {
+  margin-bottom: 0;
+}
+
+.cart-details__price-word {
+  margin-right: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+}
+
+.cart-details__price-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+  font-weight: bold;
+}
+
+.cart-details__quantity {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #666666;
+}
+
+.cart-details__quantity-title {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
+  font-size: 13px;
+}
+
+.cart-details__quantity--md {
+  display: none;
+}
+
+.cart-notes {
+  margin-top: 24px;
+}
+
+.cart-notes label,
+.cart-notes textarea {
+  width: 100%;
+}
+
+.cart-notes label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #422f6b;
+}
+
+.order-details {
+  margin-top: 8px;
+  padding: 4px;
+  border: 1px solid #00000033;
+  border-radius: 8px;
+  background-color: #00000008;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.cart-product-card__complete-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background-color: #422f6b;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.add-icon {
+  margin-right: 12px;
+}
+
+@media (min-width: 576px) {
+  .cart__details {
+    padding: 12px;
+  }
+
+  .cart-details__quantity--sm {
+    display: none;
+  }
+
+  .cart-details__quantity--md {
+    display: block;
+  }
+
+  
+}
+
+@media (min-width: 992px) {
+  .cart__details {
+    padding: 16px;
+    box-shadow: none;
+  }
+
+  .cart-details__price {
+    justify-content: space-between;
+  }
+
+  .cart-notes {
+    margin: 32px 0;
+  }
+  .order__itens-title {
+    display: none;
+  }
+}

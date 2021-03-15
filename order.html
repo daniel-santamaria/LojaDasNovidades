@@ -20,9 +20,9 @@
         content="A melhor opção de compras em atacado! Presentes, decoração e uma seleção exclusiva de produtos nacionais e importados. Atendimento personalizado e envios para todo o Brasil!" />
     <meta name="keywords" content="atacado, presentes, decoração, importados" />
     <link rel="stylesheet" href="public/styles/global.css" />
-    <link rel="stylesheet" href="public/styles/cart.css" />
     <link rel="stylesheet" href="public/styles/quantity-selector.css" />
     <link rel="stylesheet" href="public/styles/product-card-review.css" />
+    <link rel="stylesheet" href="public/styles/order.css" />
     <link rel="stylesheet" href="public/styles/header.css" />
     <link rel="stylesheet" href="public/styles/footer.css" />
     <link
@@ -86,7 +86,11 @@
 
         <div class="container">
             <div>
-                <div class="cart__title">Seus Itens (5)</div>
+                <div class="order__title">Muito Obrigado!</div>
+                <div class="order__notice">
+                    O Pedido <b>#12345678</b> acaba de ser gerado. Aguarde o contato da nossa equipe via telefone ou WhatsApp
+                    para a realização dos acertos finais da negociação. Até breve!
+                </div>
             </div>
             <div class="cart">
                 <div class="cart__items col-12 col-lg-8">
@@ -98,7 +102,6 @@
                         <div class="cart-product-card__info">
                             <div class="cart-product-card__heading">
                                 <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
                             </div>
                             <div class="cart-product__code">Código 123456</div>
                             <div class="cart-details__price-un">R$ 1,23/un.</div>
@@ -107,13 +110,11 @@
                                     <div class="cart-details__price-un--md-title">Preço Unitário</div>
                                     <div>R$ 1,23</div>
                                 </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
+                                <div class="cart-details__quantity">
+                                    <div class="cart-details__quantity--sm">Qtd: 10</div>
+                                    <div class="cart-details__quantity--md">
+                                        <div class="cart-details__quantity-title">Quantidade</div>
+                                        <div>10</div>
                                     </div>
                                 </div>
                                 <div>
@@ -131,7 +132,6 @@
                         <div class="cart-product-card__info">
                             <div class="cart-product-card__heading">
                                 <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
                             </div>
                             <div class="cart-product__code">Código 123456</div>
                             <div class="cart-details__price-un">R$ 1,23/un.</div>
@@ -140,13 +140,11 @@
                                     <div class="cart-details__price-un--md-title">Preço Unitário</div>
                                     <div>R$ 1,23</div>
                                 </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
+                                <div class="cart-details__quantity">
+                                    <div class="cart-details__quantity--sm">Qtd: 10</div>
+                                    <div class="cart-details__quantity--md">
+                                        <div class="cart-details__quantity-title">Quantidade</div>
+                                        <div>10</div>
                                     </div>
                                 </div>
                                 <div>
@@ -164,7 +162,6 @@
                         <div class="cart-product-card__info">
                             <div class="cart-product-card__heading">
                                 <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
                             </div>
                             <div class="cart-product__code">Código 123456</div>
                             <div class="cart-details__price-un">R$ 1,23/un.</div>
@@ -173,13 +170,11 @@
                                     <div class="cart-details__price-un--md-title">Preço Unitário</div>
                                     <div>R$ 1,23</div>
                                 </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
+                                <div class="cart-details__quantity">
+                                    <div class="cart-details__quantity--sm">Qtd: 10</div>
+                                    <div class="cart-details__quantity--md">
+                                        <div class="cart-details__quantity-title">Quantidade</div>
+                                        <div>10</div>
                                     </div>
                                 </div>
                                 <div>
@@ -197,7 +192,6 @@
                         <div class="cart-product-card__info">
                             <div class="cart-product-card__heading">
                                 <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
                             </div>
                             <div class="cart-product__code">Código 123456</div>
                             <div class="cart-details__price-un">R$ 1,23/un.</div>
@@ -206,13 +200,11 @@
                                     <div class="cart-details__price-un--md-title">Preço Unitário</div>
                                     <div>R$ 1,23</div>
                                 </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
+                                <div class="cart-details__quantity">
+                                    <div class="cart-details__quantity--sm">Qtd: 10</div>
+                                    <div class="cart-details__quantity--md">
+                                        <div class="cart-details__quantity-title">Quantidade</div>
+                                        <div>10</div>
                                     </div>
                                 </div>
                                 <div>
@@ -230,7 +222,6 @@
                         <div class="cart-product-card__info">
                             <div class="cart-product-card__heading">
                                 <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
                             </div>
                             <div class="cart-product__code">Código 123456</div>
                             <div class="cart-details__price-un">R$ 1,23/un.</div>
@@ -239,13 +230,11 @@
                                     <div class="cart-details__price-un--md-title">Preço Unitário</div>
                                     <div>R$ 1,23</div>
                                 </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
+                                <div class="cart-details__quantity">
+                                    <div class="cart-details__quantity--sm">Qtd: 10</div>
+                                    <div class="cart-details__quantity--md">
+                                        <div class="cart-details__quantity-title">Quantidade</div>
+                                        <div>10</div>
                                     </div>
                                 </div>
                                 <div>
@@ -255,60 +244,29 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="cart-product-card">
-                        <div class="cart-product-card__image"
-                            style="background-image: url('https://cdn.awsli.com.br/1000x1000/9/9664/produto/26889124/b016500c8d.jpg');">
-                        </div>
-                        <div class="cart-product-card__info">
-                            <div class="cart-product-card__heading">
-                                <div class="cart-product-card__name">Nome do Produto</div>
-                                <i class="fas fa-trash"></i>
-                            </div>
-                            <div class="cart-product__code">Código 123456</div>
-                            <div class="cart-details__price-un">R$ 1,23/un.</div>
-                            <div class="cart-product-card__details">
-                                <div class="cart-details__price-un--md">
-                                    <div class="cart-details__price-un--md-title">Preço Unitário</div>
-                                    <div>R$ 1,23</div>
-                                </div>
-                                <div class="product-card__quantity-selector">
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-minus"></i>
-                                    </div>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="5" />
-                                    <div class="product-card__quantity-button">
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="cart-details__price-total-title">Preço Total</div>
-                                    <div class="cart-details__price-total">R$ 1234,56</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
 
                 </div>
 
-
+                <div class="order__itens-title">Itens do Pedido (5)</div>
 
                 <div class="cart__details col-12 col-lg-4">
                     <div class="cart-details__price">
-                        <div class="cart-details__price-word">Subtotal</div>
+                        <div class="cart-details__price-word">Subtotal do Pedido</div>
                         <div class="cart-details__price-value">R$ 1234,56</div>
                     </div>
                     <div class="cart-notes">
                         <label for="orderDetails">Observações</label>
-                        <textarea id="orderDetails" rows="3"
-                            placeholder="Informe detalhes adicionais como preferência de cor, tamanho ou tema dos produtos selecionados"></textarea>
+                        <div class="order-details">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, minima! Deserunt quas
+                            eligendi maxime. Sit ab ratione iste, expedita placeat deserunt repudiandae minima, odit
+                            recusandae aperiam ullam. Fugiat, omnis consequuntur!
+                            Qui dicta nam, tenetur dolorem similique temporibus? Vero, deleniti nobis. Repudiandae
+                            deleniti quibusdam possimus architecto aliquam eum ea quisquam obcaecati sapiente quos ad,
+                            iusto labore rem repellendus. Ex, libero dicta!
+                            Suscipit voluptatem optio nemo alias labore est accusamus porro, fuga omnis repellendus aut
+                            necessitatibus non voluptatum.
+                        </div>
                     </div>
-                    <button type="" class="cart-product-card__complete-order">
-                        <i class="fas fa-shopping-cart add-icon"></i>
-                        <span>Finalizar Pedido</span>
-                    </button>
                 </div>
             </div>
         </div>
