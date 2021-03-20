@@ -8,7 +8,6 @@
   border: 1px solid #00000033;
   border-radius: 8px;
   background-color: #fff;
-  transition: box-shadow 0.2s ease-in;
 }
 
 .cart-product-card__image {
