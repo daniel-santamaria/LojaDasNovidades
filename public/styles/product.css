@@ -167,6 +167,11 @@
   margin-bottom: 32px
 }
 
+.product__category-link {
+  /* font-style: italic; */
+  text-decoration: underline;
+}
+
 .other-products__list {
   display: flex;
   flex-wrap: nowrap;
